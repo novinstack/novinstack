@@ -22,6 +22,28 @@
 
 </div>
 
+<div align="center">
+
+### 🌐 Choose Language | انتخاب زبان
+
+<a href="./README.md">
+  <img
+    src="https://img.shields.io/badge/🇮🇷_فارسی-مشاهده_نسخه_فارسی-2563EB?style=for-the-badge"
+    alt="Persian Version"
+  >
+</a>
+&nbsp;
+<a href="./README_EN.md">
+  <img
+    src="https://img.shields.io/badge/🇬🇧_English-Current_Version-16A34A?style=for-the-badge"
+    alt="English Version"
+  >
+</a>
+
+<br><br>
+
+</div>
+
 ---
 
 ## About NovinStack
