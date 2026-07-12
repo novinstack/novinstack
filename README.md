@@ -78,9 +78,9 @@ Our work covers the complete software product lifecycle:
 
 </div>
 
-<table width="100%">
+<table width="100%" dir="rtl">
   <tr>
-    <td width="50%" valign="top">
+    <td width="50%" valign="top" align="right">
       <h3>🌐 وب‌سایت و سامانه‌های اختصاصی</h3>
       <ul>
         <li>وب‌سایت‌های اختصاصی</li>
@@ -93,7 +93,7 @@ Our work covers the complete software product lifecycle:
         <li>سیستم‌های ثبت و پیگیری سفارش</li>
       </ul>
     </td>
-    <td width="50%" valign="top">
+    <td width="50%" valign="top" align="right">
       <h3>📊 پنل و سیستم‌های مدیریتی</h3>
       <ul>
         <li>پنل‌های مدیریتی</li>
@@ -108,7 +108,7 @@ Our work covers the complete software product lifecycle:
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top">
+    <td width="50%" valign="top" align="right">
       <h3>🔗 Backend & API</h3>
       <ul>
         <li>RESTful API</li>
@@ -122,7 +122,7 @@ Our work covers the complete software product lifecycle:
         <li>مستندسازی API</li>
       </ul>
     </td>
-    <td width="50%" valign="top">
+    <td width="50%" valign="top" align="right">
       <h3>🤖 Automation & Practical AI</h3>
       <ul>
         <li>اتوماسیون با n8n</li>
@@ -137,7 +137,7 @@ Our work covers the complete software product lifecycle:
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top">
+    <td width="50%" valign="top" align="right">
       <h3>🖥️ نرم‌افزارهای دسکتاپ</h3>
       <ul>
         <li>نرم‌افزارهای مدیریتی</li>
@@ -148,11 +148,11 @@ Our work covers the complete software product lifecycle:
         <li>اتصال نرم‌افزار دسکتاپ به API</li>
       </ul>
     </td>
-    <td width="50%" valign="top">
+    <td width="50%" valign="top" align="right">
       <h3>📱 اپلیکیشن‌های موبایل</h3>
       <ul>
         <li>اپلیکیشن‌های Android</li>
-        <li>اپلیکیشن‌های چندسکویی</li>
+        <li>اپلیکیشن‌های چندسکویی با Flutter و .NET MAUI</li>
         <li>اتصال اپلیکیشن به Backend</li>
         <li>پنل مدیریت اپلیکیشن</li>
         <li>ذخیره‌سازی آفلاین</li>
@@ -215,6 +215,7 @@ Our work covers the complete software product lifecycle:
 
 - طراحی معماری Backend
 - طراحی و توسعه REST API
+- توسعه Backend با Node.js و Express.js
 - احراز هویت و مجوزدهی
 - JWT و OAuth
 - مدیریت فایل و ضمیمه
@@ -268,6 +269,7 @@ Our work covers the complete software product lifecycle:
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)
 
 ### Frontend
 
@@ -294,6 +296,7 @@ Our work covers the complete software product lifecycle:
 
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
 ![.NET MAUI](https://img.shields.io/badge/.NET_MAUI-512BD4?style=flat-square&logo=dotnet&logoColor=white)
 ![WPF](https://img.shields.io/badge/WPF-512BD4?style=flat-square&logo=dotnet&logoColor=white)
 ![WinForms](https://img.shields.io/badge/WinForms-512BD4?style=flat-square&logo=dotnet&logoColor=white)
@@ -381,38 +384,6 @@ Deliver usable increments
 Improve continuously
 ```
 
----
-
-<div dir="rtl">
-
-## وضعیت پروژه‌ها
-
-| وضعیت | توضیح |
-|---|---|
-| 🟢 **Active** | پروژه در حال توسعه فعال است. |
-| 🔵 **Maintained** | پروژه پایدار است و به‌صورت منظم نگهداری می‌شود. |
-| 🟡 **Beta** | نسخه آزمایشی پروژه منتشر شده و آماده بررسی است. |
-| 🟠 **Experimental** | پروژه در مرحله تحقیق، آزمایش یا اعتبارسنجی قرار دارد. |
-| ⚪ **Planned** | پروژه در مرحله تحلیل و برنامه‌ریزی قرار دارد. |
-| ⚫ **Archived** | توسعه پروژه متوقف شده یا پروژه جایگزین شده است. |
-
-</div>
-
----
-
-<div dir="rtl">
-
-## زبان پروژه‌ها و مستندات
-
-- کد، کلاس‌ها و متغیرها: انگلیسی
-- نام Repository و Branch: انگلیسی
-- Commitها: انگلیسی
-- مستندات فنی عمومی: انگلیسی
-- راهنمای کاربران ایرانی: فارسی
-- محصولات مخصوص بازار ایران: فارسی و انگلیسی
-- رابط کاربری محصولات ایرانی: فارسی و RTL
-
-</div>
 
 ---
 
