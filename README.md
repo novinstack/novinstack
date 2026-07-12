@@ -1,46 +1,36 @@
+<p align="center">
+  <img src="./assets/novinstack-cover-fa.png" alt="نوین‌استک — توسعه نرم‌افزار، اتوماسیون و محصولات دیجیتال" width="100%">
+</p>
+
+<table align="center">
+  <tr>
+    <td align="center"><strong>🇮🇷 نسخه فارسی</strong></td>
+    <td align="center"><a href="./README_EN.md"><strong>🇬🇧 English Version</strong></a></td>
+  </tr>
+</table>
+
 <div align="center">
 
-[🇮🇷 فارسی](./README.md) · [🇬🇧 English](./README_EN.md)
-
-</div>
-
-<div align="center">
-
-# NovinStack | نوین‌استک
-
-### از یادگیری تا ساخت محصول
-
-**Custom Software · Web Applications · Automation · Practical AI · Digital Products**
-
-<br>
-
-<a href="https://novinstack.com"><img src="https://img.shields.io/badge/Website-novinstack.com-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white" alt="NovinStack Website"></a>
-&nbsp;
-<a href="https://instagram.com/novinstack"><img src="https://img.shields.io/badge/Instagram-@novinstack-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="NovinStack Instagram"></a>
-&nbsp;
-<a href="https://linkedin.com/company/novinstack"><img src="https://img.shields.io/badge/LinkedIn-NovinStack-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="NovinStack LinkedIn"></a>
-&nbsp;
-<a href="https://t.me/novinstack"><img src="https://img.shields.io/badge/Telegram-@novinstack-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="NovinStack Telegram"></a>
-
-<br><br>
-
-> توسعه نرم‌افزار، آموزش و اتوماسیون برای کسب‌وکارهای دیجیتال
+[![Website](https://img.shields.io/badge/Website-novinstack.com-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://novinstack.com)
+[![Instagram](https://img.shields.io/badge/Instagram-@novinstack-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/novinstack)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-NovinStack-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/company/novinstack)
+[![Telegram](https://img.shields.io/badge/Telegram-@novinstack-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/novinstack)
 
 </div>
 
 ---
 
-<div dir="rtl">
+<div dir="rtl" align="right">
 
 ## درباره نوین‌استک
 
-**نوین‌استک** یک گروه نرم‌افزاری و فناوری است که روی تحلیل، طراحی و توسعه راهکارهای نرم‌افزاری اختصاصی تمرکز دارد.
+**نوین‌استک** یک گروه نرم‌افزاری و فناوری است که بر تحلیل، طراحی و توسعه راهکارهای نرم‌افزاری اختصاصی تمرکز دارد.
 
 فعالیت اصلی ما شامل طراحی و توسعه وب‌سایت‌های اختصاصی، سامانه‌های تحت وب، فروشگاه‌های اینترنتی، پنل‌های مدیریتی، داشبوردهای گزارش‌گیری، APIها، نرم‌افزارهای سازمانی، اتوماسیون فرایندها و محصولات دیجیتال است.
 
-در نوین‌استک تلاش می‌کنیم ایده‌ها، نیازهای عملیاتی و فرایندهای دستی کسب‌وکارها را به نرم‌افزارهایی قابل استفاده، قابل نگهداری و قابل توسعه تبدیل کنیم.
+در نوین‌استک تلاش می‌کنیم ایده‌ها، نیازهای عملیاتی و فرایندهای دستی کسب‌وکارها را به نرم‌افزارهایی کاربردی، قابل نگهداری و قابل توسعه تبدیل کنیم.
 
-ما فقط یک رابط کاربری یا چند صفحه وب طراحی نمی‌کنیم؛ بلکه در صورت نیاز، تمام مسیر شکل‌گیری و توسعه محصول را پوشش می‌دهیم:
+ما فقط یک رابط کاربری یا چند صفحه وب طراحی نمی‌کنیم؛ بلکه در صورت نیاز، کل مسیر شکل‌گیری و توسعه محصول را پوشش می‌دهیم:
 
 - تحلیل نیازها و فرایندهای کسب‌وکار
 - تعیین محدوده و نیازمندی‌های پروژه
@@ -78,7 +68,7 @@ Our work covers the complete software product lifecycle:
 
 ---
 
-<div dir="rtl">
+<div dir="rtl" align="right">
 
 ## چه چیزی می‌سازیم؟
 
@@ -86,7 +76,7 @@ Our work covers the complete software product lifecycle:
 
 <table width="100%" dir="rtl">
   <tr>
-    <td width="50%" valign="top" align="right">
+    <td width="50%" valign="top" align="right" dir="rtl">
       <h3>🌐 وب‌سایت و سامانه‌های اختصاصی</h3>
       <ul>
         <li>وب‌سایت‌های اختصاصی</li>
@@ -99,7 +89,7 @@ Our work covers the complete software product lifecycle:
         <li>سیستم‌های ثبت و پیگیری سفارش</li>
       </ul>
     </td>
-    <td width="50%" valign="top" align="right">
+    <td width="50%" valign="top" align="right" dir="rtl">
       <h3>📊 پنل و سیستم‌های مدیریتی</h3>
       <ul>
         <li>پنل‌های مدیریتی</li>
@@ -114,10 +104,10 @@ Our work covers the complete software product lifecycle:
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top" align="right">
-      <h3>🔗 Backend & API</h3>
+    <td width="50%" valign="top" align="right" dir="rtl">
+      <h3>🔗 Backend و API</h3>
       <ul>
-        <li>RESTful API</li>
+        <li>طراحی و توسعه RESTful API</li>
         <li>معماری Backend</li>
         <li>احراز هویت و مجوزدهی</li>
         <li>اتصال سرویس‌های مختلف</li>
@@ -128,8 +118,8 @@ Our work covers the complete software product lifecycle:
         <li>مستندسازی API</li>
       </ul>
     </td>
-    <td width="50%" valign="top" align="right">
-      <h3>🤖 Automation & Practical AI</h3>
+    <td width="50%" valign="top" align="right" dir="rtl">
+      <h3>🤖 اتوماسیون و هوش مصنوعی کاربردی</h3>
       <ul>
         <li>اتوماسیون با n8n</li>
         <li>ربات‌های تلگرام</li>
@@ -143,7 +133,7 @@ Our work covers the complete software product lifecycle:
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top" align="right">
+    <td width="50%" valign="top" align="right" dir="rtl">
       <h3>🖥️ نرم‌افزارهای دسکتاپ</h3>
       <ul>
         <li>نرم‌افزارهای مدیریتی</li>
@@ -154,15 +144,15 @@ Our work covers the complete software product lifecycle:
         <li>اتصال نرم‌افزار دسکتاپ به API</li>
       </ul>
     </td>
-    <td width="50%" valign="top" align="right">
+    <td width="50%" valign="top" align="right" dir="rtl">
       <h3>📱 اپلیکیشن‌های موبایل</h3>
       <ul>
         <li>اپلیکیشن‌های Android</li>
-        <li>اپلیکیشن‌های چندسکویی با Flutter و .NET MAUI</li>
+        <li>اپلیکیشن‌های چندسکویی</li>
+        <li>توسعه با Flutter</li>
+        <li>توسعه با .NET MAUI</li>
         <li>اتصال اپلیکیشن به Backend</li>
-        <li>پنل مدیریت اپلیکیشن</li>
-        <li>ذخیره‌سازی آفلاین</li>
-        <li>همگام‌سازی اطلاعات</li>
+        <li>ذخیره‌سازی آفلاین و همگام‌سازی اطلاعات</li>
       </ul>
     </td>
   </tr>
@@ -170,7 +160,7 @@ Our work covers the complete software product lifecycle:
 
 ---
 
-<div dir="rtl">
+<div dir="rtl" align="right">
 
 ## شاخه‌های نوین‌استک
 
@@ -187,7 +177,7 @@ Our work covers the complete software product lifecycle:
 
 ---
 
-<div dir="rtl">
+<div dir="rtl" align="right">
 
 ## خدمات توسعه نرم‌افزار
 
@@ -220,8 +210,10 @@ Our work covers the complete software product lifecycle:
 ### توسعه Backend
 
 - طراحی معماری Backend
-- طراحی و توسعه REST API
-- توسعه Backend با Node.js و Express.js
+- توسعه REST API
+- توسعه با ASP.NET Core
+- توسعه با Node.js و Express.js
+- توسعه با PHP و Laravel
 - احراز هویت و مجوزدهی
 - JWT و OAuth
 - مدیریت فایل و ضمیمه
@@ -229,7 +221,6 @@ Our work covers the complete software product lifecycle:
 - اتصال سرویس‌های خارجی
 - پردازش‌های زمان‌بندی‌شده
 - مدیریت خطا و Logging
-- طراحی ساختار قابل توسعه
 
 ### تحلیل و معماری نرم‌افزار
 
@@ -300,9 +291,9 @@ Our work covers the complete software product lifecycle:
 
 ### Mobile & Desktop
 
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
 ![.NET MAUI](https://img.shields.io/badge/.NET_MAUI-512BD4?style=flat-square&logo=dotnet&logoColor=white)
 ![WPF](https://img.shields.io/badge/WPF-512BD4?style=flat-square&logo=dotnet&logoColor=white)
 ![WinForms](https://img.shields.io/badge/WinForms-512BD4?style=flat-square&logo=dotnet&logoColor=white)
@@ -334,9 +325,11 @@ Our work covers the complete software product lifecycle:
 
 ---
 
-<div dir="rtl">
+<div dir="rtl" align="right">
 
 ## حوزه پروژه‌ها
+
+نوین‌استک روی پروژه‌ها و محصولاتی در این حوزه‌ها فعالیت می‌کند:
 
 - وب‌سایت‌ها و سامانه‌های اختصاصی
 - فروشگاه‌های اینترنتی اختصاصی
@@ -362,15 +355,15 @@ Our work covers the complete software product lifecycle:
 
 ---
 
-<div dir="rtl">
+<div dir="rtl" align="right">
 
 ## اصول توسعه در نوین‌استک
 
 | مرحله | موارد اصلی |
 |---|---|
 | 🔍 **پیش از توسعه** | تحلیل نیازها، تعیین محدوده، تعریف معیار پذیرش، طراحی دیتابیس و انتخاب معماری |
-| 💻 **هنگام توسعه** | نام‌گذاری استاندارد، جداسازی مسئولیت‌ها، Git، مدیریت خطا و مستندسازی تصمیم‌ها |
-| ✅ **پیش از تحویل** | تست جریان‌های حیاتی، امنیت پایه، Responsive، Backup و مستندات استقرار |
+| 💻 **هنگام توسعه** | نام‌گذاری استاندارد، جداسازی مسئولیت‌ها، کنترل نسخه با Git، مدیریت خطا و مستندسازی |
+| ✅ **پیش از تحویل** | تست جریان‌های حیاتی، بررسی امنیت پایه، کنترل Responsive، آماده‌سازی Backup و مستندات استقرار |
 
 </div>
 
@@ -390,14 +383,24 @@ Deliver usable increments
 Improve continuously
 ```
 
-
 ---
 
-<div dir="rtl">
+<div dir="rtl" align="right">
 
 ## همکاری با نوین‌استک
 
-از همکاری در حوزه‌های Backend، Frontend، موبایل، دسکتاپ، UI/UX، تست، DevOps، مستندسازی، اتوماسیون، هوش مصنوعی و پروژه‌های متن‌باز استقبال می‌کنیم.
+از همکاری در حوزه‌های زیر استقبال می‌کنیم:
+
+- توسعه Backend و Frontend
+- توسعه موبایل و دسکتاپ
+- طراحی UI/UX
+- تست نرم‌افزار
+- DevOps
+- تولید محتوای فنی و مستندسازی
+- اتوماسیون و هوش مصنوعی
+- پروژه‌های متن‌باز
+- توسعه محصولات نرم‌افزاری
+- همکاری پروژه‌ای
 
 روش‌های مشارکت:
 
@@ -412,7 +415,7 @@ Improve continuously
 
 ---
 
-<div dir="rtl">
+<div dir="rtl" align="right">
 
 ## گزارش مشکلات امنیتی
 
@@ -430,21 +433,16 @@ Improve continuously
 
 ## ارتباط با نوین‌استک
 
-<a href="https://novinstack.com"><img src="https://img.shields.io/badge/Website-Visit_NovinStack-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"></a>
-&nbsp;
-<a href="https://instagram.com/novinstack"><img src="https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
-&nbsp;
-<a href="https://linkedin.com/company/novinstack"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-&nbsp;
-<a href="https://t.me/novinstack"><img src="https://img.shields.io/badge/Telegram-Join_Channel-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
+[![Website](https://img.shields.io/badge/Website-Visit_NovinStack-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://novinstack.com)
+[![Instagram](https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/novinstack)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/company/novinstack)
+[![Telegram](https://img.shields.io/badge/Telegram-Join_Channel-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/novinstack)
 
-<br><br>
+<br>
 
 ### [شروع همکاری با نوین‌استک](https://novinstack.com/contact)
 
 <br>
-
-## NovinStack
 
 ### Learn · Build · Automate · Grow
 
