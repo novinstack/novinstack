@@ -1,249 +1,266 @@
+<div align="center">
+
 # NovinStack | نوین‌استک
 
-<p align="center">
-  <strong>از یادگیری تا ساخت محصول</strong>
-</p>
+### از یادگیری تا ساخت محصول
 
-<p align="center">
-  توسعه نرم‌افزار، آموزش برنامه‌نویسی، اتوماسیون و راهکارهای دیجیتال
-</p>
+**Custom Software • Web Applications • Automation • Practical AI • Digital Products**
 
-<p align="center">
-  Software Development • Automation • Practical AI • Education • Digital Products
-</p>
+<br>
 
-<p align="center">
-  <a href="https://novinstack.com">Website</a>
-  ·
-  <a href="https://instagram.com/novinstack">Instagram</a>
-  ·
-  <a href="https://linkedin.com/company/novinstack">LinkedIn</a>
-  ·
-  <a href="https://t.me/novinstack">Telegram</a>
-  ·
-  <a href="https://youtube.com/@novinstack">YouTube</a>
-</p>
+[![Website](https://img.shields.io/badge/Website-novinstack.com-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://novinstack.com)
+[![Instagram](https://img.shields.io/badge/Instagram-novinstack-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/novinstack)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-NovinStack-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/company/novinstack)
+[![Telegram](https://img.shields.io/badge/Telegram-novinstack-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/novinstack)
+
+<br>
+
+> توسعه نرم‌افزار، آموزش و اتوماسیون برای کسب‌وکارهای دیجیتال
+
+</div>
 
 ---
 
+<div dir="rtl">
+
 ## درباره نوین‌استک
 
-**نوین‌استک** یک گروه نرم‌افزاری و فناوری است که در زمینه طراحی و توسعه نرم‌افزارهای اختصاصی، وب‌سایت‌ها، فروشگاه‌های اینترنتی، پنل‌های مدیریتی، اپلیکیشن‌ها، اتوماسیون فرایندها و محصولات دیجیتال فعالیت می‌کند.
+**نوین‌استک** یک گروه نرم‌افزاری و فناوری است که روی تحلیل، طراحی و توسعه راهکارهای نرم‌افزاری اختصاصی تمرکز دارد.
 
-ما از مرحله تحلیل، معماری و طراحی تا توسعه، استقرار، بهینه‌سازی و پشتیبانی در کنار کسب‌وکارها و تیم‌ها هستیم.
+فعالیت اصلی ما شامل طراحی و توسعه وب‌سایت‌های اختصاصی، سامانه‌های تحت وب، فروشگاه‌های اینترنتی، پنل‌های مدیریتی، داشبوردهای گزارش‌گیری، APIها، نرم‌افزارهای سازمانی، اتوماسیون فرایندها و محصولات دیجیتال است.
 
-تمرکز ما روی ساخت راهکارهایی است که:
+در نوین‌استک تلاش می‌کنیم ایده‌ها، نیازهای عملیاتی و فرایندهای دستی کسب‌وکارها را به نرم‌افزارهایی قابل استفاده، قابل نگهداری و قابل توسعه تبدیل کنیم.
 
-- قابل استفاده باشند
-- قابلیت توسعه داشته باشند
-- ساختار فنی مناسبی داشته باشند
-- فرایندهای کسب‌وکار را ساده‌تر کنند
-- به کاهش کارهای تکراری کمک کنند
-- در عمل برای کاربر و کسب‌وکار ارزش ایجاد کنند
+ما فقط یک رابط کاربری یا چند صفحه وب طراحی نمی‌کنیم؛ بلکه در صورت نیاز، کل مسیر محصول را پوشش می‌دهیم:
+
+- تحلیل نیازها و فرایندهای کسب‌وکار
+- طراحی معماری نرم‌افزار
+- طراحی دیتابیس و ساختار داده
+- طراحی تجربه و رابط کاربری
+- توسعه Backend و Frontend
+- طراحی و توسعه API
+- تست و کنترل کیفیت
+- استقرار و راه‌اندازی
+- نگهداری و توسعه نسخه‌های بعدی
+
+</div>
 
 ---
 
 ## About NovinStack
 
-**NovinStack** is a software and technology group focused on custom software development, web platforms, e-commerce solutions, business automation, programming education, practical AI solutions, and digital products.
+**NovinStack** is a software and technology group focused on building custom software, modern web applications, business automation solutions, practical AI integrations, and digital products.
 
-We help businesses and teams turn ideas, manual workflows, and operational needs into reliable and scalable software products.
+We help businesses transform ideas, operational challenges, and manual workflows into reliable, maintainable, and scalable software solutions.
 
-Our work covers the full product lifecycle:
-
-- Requirement analysis
-- Software architecture
-- UI and system design
-- Backend and frontend development
-- API integration
-- Testing and quality assurance
-- Deployment and maintenance
-- Automation and continuous improvement
+Our work covers the complete software product lifecycle—from requirements analysis and architecture to development, deployment, maintenance, and continuous improvement.
 
 ---
 
-## حوزه‌های فعالیت
+<div dir="rtl">
 
-### NovinStack Software
+## چه چیزی می‌سازیم؟
 
-طراحی و توسعه راهکارهای نرم‌افزاری اختصاصی:
+</div>
 
-- وب‌سایت شرکتی
-- فروشگاه اینترنتی
-- سامانه‌های اختصاصی
-- پنل مدیریت
-- داشبورد گزارش‌گیری
-- نرم‌افزار دسکتاپ
-- اپلیکیشن موبایل
-- بک‌اند و API
-- اتصال سرویس‌های مختلف
-- توسعه و سفارشی‌سازی وردپرس و ووکامرس
+<table>
+<tr>
+<td width="50%" valign="top">
 
-### NovinStack Automation
+### 🌐 Custom Web Applications
 
-طراحی و پیاده‌سازی اتوماسیون‌های کاربردی:
-
-- اتوماسیون با n8n
-- ربات تلگرام
-- اتصال سایت به پیام‌رسان‌ها
-- اتصال APIها
-- ارسال خودکار گزارش‌ها
-- اتوماسیون فروش و پشتیبانی
-- اتصال فرم‌ها، سایت، CRM و Google Sheets
-- خودکارسازی فرایندهای تکراری
-- استفاده کاربردی از هوش مصنوعی در گردش‌کارها
-
-### NovinStack Academy
-
-آموزش برنامه‌نویسی و توسعه نرم‌افزار:
-
-- آموزش پروژه‌محور
-- مسیرهای یادگیری
-- آموزش C# و .NET
-- آموزش طراحی API
-- آموزش پایگاه داده
-- آموزش توسعه وب
-- آموزش معماری نرم‌افزار
-- آموزش Git و GitHub
-- آموزش اتوماسیون و ابزارهای AI
-- منتورینگ و رفع اشکال
-
-### NovinStack Growth
-
-خدمات فنی و محتوایی برای رشد دیجیتال:
-
-- طراحی و توسعه وردپرس
-- توسعه فروشگاه ووکامرس
-- سئو فنی
-- بهینه‌سازی سرعت
-- Core Web Vitals
-- محتواگذاری و محصول‌گذاری
-- تولید محتوای سئوشده
-- بهینه‌سازی مسیر خرید
-- پشتیبانی و مدیریت سایت
-- تحلیل و بهبود تجربه کاربری
-
-### NovinStack Labs
-
-فضایی برای توسعه و آزمایش ایده‌های جدید:
-
-- ابزارهای متن‌باز
-- افزونه‌ها
-- پروژه‌های آزمایشی
-- MVP
-- ابزارهای توسعه‌دهندگان
-- کتابخانه‌های نرم‌افزاری
-- پروژه‌های آموزشی
-- محصولات اولیه و نسخه‌های Beta
-
-### NovinStack Products
-
-محصولات نرم‌افزاری آماده و قابل استفاده:
-
-- افزونه‌های وردپرس و ووکامرس
-- ابزارهای مدیریتی
+- وب‌سایت‌های اختصاصی
 - سامانه‌های تحت وب
-- نرم‌افزارهای دسکتاپ
-- ابزارهای اتوماسیون
-- محصولات SaaS
-- قالب‌ها و محصولات دیجیتال
+- پلتفرم‌های خدماتی
+- پرتال‌های سازمانی
+- فروشگاه‌های اختصاصی
+- مارکت‌پلیس‌های چندفروشندگی
+- پنل‌های مشتریان
+- سیستم‌های ثبت و پیگیری سفارش
 
----
+</td>
+<td width="50%" valign="top">
 
-## خدمات اصلی
+### 📊 Management Systems
 
-### طراحی و توسعه وب‌سایت
-
-- سایت شرکتی
-- سایت فروشگاهی
-- سایت خدماتی
-- سایت اختصاصی
-- طراحی و توسعه وردپرس
-- توسعه قالب و افزونه
-- طراحی لندینگ پیج
-- پیاده‌سازی طرح Figma
-- طراحی واکنش‌گرا
-- بهینه‌سازی سرعت و سئو فنی
-
-### توسعه فروشگاه اینترنتی
-
-- WooCommerce
-- سیستم سفارش و پرداخت
-- محصولات ساده و متغیر
-- مدیریت سفارش‌ها
-- سفارشی‌سازی صفحه محصول
-- توسعه فرایند خرید
-- اتصال فروشگاه به سرویس‌های دیگر
-- توسعه افزونه‌های اختصاصی
-- ورود و مدیریت محصولات
-- پشتیبانی فروشگاه
-
-### نرم‌افزارهای اختصاصی
-
-- سیستم مدیریت
-- داشبورد مدیریتی
-- پنل سازمانی
-- نرم‌افزار داخلی شرکت
-- سیستم ثبت و پیگیری سفارش
+- پنل‌های مدیریتی
+- داشبوردهای آماری
+- سیستم‌های گزارش‌گیری
+- مدیریت کاربران و دسترسی‌ها
+- مدیریت فروش و سفارش
 - مدیریت تأمین‌کنندگان
-- مدیریت داده و گزارش
-- نرم‌افزارهای آنلاین و آفلاین
-- نرم‌افزار دسکتاپ
-- ابزارهای سازمانی
+- سیستم‌های داخلی سازمانی
+- ابزارهای مدیریت فرایند
 
-### API و Backend
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+### 🔗 Backend & API
 
 - RESTful API
-- ASP.NET Core
-- FastAPI
-- Node.js
-- احراز هویت
-- JWT
-- طراحی پایگاه داده
-- EF Core
-- Dapper
-- اتصال سرویس‌ها
+- سیستم‌های احراز هویت
+- اتصال سرویس‌های مختلف
+- Webhook و Callback
+- معماری Backend
+- مدیریت پرداخت
+- پردازش اطلاعات
 - مستندسازی API
-- توسعه معماری قابل گسترش
+- توسعه سرویس‌های مقیاس‌پذیر
 
-### اتوماسیون و ربات
+</td>
+<td width="50%" valign="top">
 
-- ربات تلگرام
-- ارسال اعلان سفارش
-- اتصال WooCommerce به پیام‌رسان
-- مدیریت فرایندهای داخلی
-- دریافت و پردازش اطلاعات
-- گزارش‌گیری خودکار
-- اتصال API
-- Webhook
+### 🤖 Automation & AI
+
 - اتوماسیون با n8n
-- AI Integration
+- ربات‌های تلگرام
+- اتصال سایت به پیام‌رسان‌ها
+- گزارش‌گیری خودکار
+- گردش‌کارهای هوشمند
+- اتصال ابزارهای هوش مصنوعی
+- پردازش و طبقه‌بندی اطلاعات
+- خودکارسازی فرایندهای تکراری
 
-### مدیریت و پشتیبانی سایت
+</td>
+</tr>
 
-- مدیریت وردپرس
-- محتواگذاری
-- محصول‌گذاری
-- بروزرسانی سایت
-- رفع خطا
-- پشتیبان‌گیری
-- بهبود سرعت
-- نگهداری فنی
-- بهینه‌سازی تجربه کاربری
-- پشتیبانی فروشگاه اینترنتی
+<tr>
+<td width="50%" valign="top">
+
+### 🖥️ Desktop & Offline Software
+
+- نرم‌افزارهای دسکتاپ
+- ابزارهای مدیریتی آفلاین
+- نرم‌افزارهای سازمانی
+- سیستم‌های محاسباتی
+- ابزارهای ورود و پردازش داده
+- ارتباط نرم‌افزار دسکتاپ با API
+- سیستم‌های مبتنی بر Windows
+
+</td>
+<td width="50%" valign="top">
+
+### 📱 Mobile Applications
+
+- اپلیکیشن‌های اندروید
+- اپلیکیشن‌های چندسکویی
+- اتصال اپلیکیشن به Backend
+- پنل مدیریت اپلیکیشن
+- معماری MVVM و MVI
+- ذخیره‌سازی آفلاین
+- همگام‌سازی اطلاعات
+
+</td>
+</tr>
+</table>
 
 ---
 
-## فناوری‌ها و ابزارها
+<div dir="rtl">
 
-### Backend
+## شاخه‌های نوین‌استک
+
+</div>
+
+| شاخه | حوزه فعالیت |
+|---|---|
+| **NovinStack Software** | توسعه وب‌سایت، سامانه، اپلیکیشن، پنل، API و نرم‌افزار اختصاصی |
+| **NovinStack Automation** | اتوماسیون، ربات‌ها، اتصال سرویس‌ها و هوش مصنوعی کاربردی |
+| **NovinStack Academy** | آموزش برنامه‌نویسی، معماری نرم‌افزار و توسعه پروژه‌محور |
+| **NovinStack Growth** | رشد دیجیتال، سئو فنی، بهینه‌سازی و راهکارهای محتوایی |
+| **NovinStack Labs** | آزمایش ایده‌ها، ابزارهای متن‌باز، MVP و نسخه‌های Beta |
+| **NovinStack Products** | نرم‌افزارها، ابزارها و محصولات دیجیتال آماده استفاده |
+
+---
+
+<div dir="rtl">
+
+## خدمات توسعه نرم‌افزار
+
+### طراحی و توسعه وب‌سایت اختصاصی
+
+- طراحی سایت‌های شرکتی و خدماتی اختصاصی
+- توسعه فروشگاه‌های اینترنتی
+- طراحی پلتفرم‌های چندنقشی
+- توسعه پنل کاربران و مدیران
+- پیاده‌سازی طرح‌های Figma
+- طراحی کاملاً Responsive
+- توسعه رابط‌های کاربری مدرن
+- بهینه‌سازی تجربه کاربری
+- اتصال Frontend به API
+- توسعه بخش‌های اختصاصی کسب‌وکار
+
+### توسعه سامانه‌های مدیریتی
+
+- مدیریت کاربران و نقش‌ها
+- سطوح دسترسی پیشرفته
+- مدیریت محصولات و خدمات
+- مدیریت سفارش‌ها
+- مدیریت تأمین‌کنندگان
+- گزارش‌های مدیریتی
+- داشبوردهای تحلیلی
+- خروجی Excel و PDF
+- ثبت تاریخچه تغییرات
+- سیستم اعلان و اطلاع‌رسانی
+
+### توسعه Backend
+
+- طراحی معماری Backend
+- طراحی و توسعه REST API
+- احراز هویت و مجوزدهی
+- JWT و OAuth
+- مدیریت فایل و ضمیمه
+- اتصال درگاه پرداخت
+- اتصال سرویس‌های خارجی
+- پردازش‌های زمان‌بندی‌شده
+- مدیریت خطا و Logging
+- طراحی ساختار قابل توسعه
+
+### تحلیل و معماری نرم‌افزار
+
+- تحلیل نیازهای پروژه
+- طراحی Use Case
+- طراحی دیتابیس
+- طراحی ERD
+- طراحی UML
+- Sequence Diagram
+- Activity Diagram
+- Clean Architecture
+- معماری لایه‌ای
+- مستندسازی فنی
+
+### اتوماسیون کسب‌وکار
+
+- اتصال سایت به پیام‌رسان
+- ارسال خودکار سفارش‌ها
+- اطلاع‌رسانی وضعیت سفارش
+- اتصال فرم‌ها به سیستم‌های دیگر
+- گزارش روزانه و دوره‌ای
+- اتصال به Google Sheets
+- اتصال APIهای مختلف
+- اتوماسیون فروش و پشتیبانی
+- کاهش فعالیت‌های دستی
+- ساخت گردش‌کارهای هوشمند
+
+</div>
+
+---
+
+## Technologies
+
+<div align="center">
+
+### Backend & Application Development
 
 ![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=csharp&logoColor=white)
 ![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white)
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-512BD4?style=flat-square&logo=dotnet&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 
 ### Frontend
 
@@ -254,12 +271,7 @@ Our work covers the full product lifecycle:
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-
-### WordPress
-
-![WordPress](https://img.shields.io/badge/WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white)
-![WooCommerce](https://img.shields.io/badge/WooCommerce-96588A?style=flat-square&logo=woocommerce&logoColor=white)
-![Elementor](https://img.shields.io/badge/Elementor-92003B?style=flat-square&logo=elementor&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
 
 ### Database
 
@@ -270,58 +282,107 @@ Our work covers the full product lifecycle:
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 
-### DevOps and Infrastructure
+### Mobile & Desktop
+
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)
+![.NET MAUI](https://img.shields.io/badge/.NET_MAUI-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![WPF](https://img.shields.io/badge/WPF-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![WinForms](https://img.shields.io/badge/WinForms-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+
+### DevOps & Infrastructure
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
 ![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-0078D7?style=flat-square&logo=azuredevops&logoColor=white)
 
-### Automation
+### Automation & Integrations
 
 ![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white)
 ![Telegram](https://img.shields.io/badge/Telegram_Bot-26A5E4?style=flat-square&logo=telegram&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/AI_Integration-412991?style=flat-square&logo=openai&logoColor=white)
+![REST API](https://img.shields.io/badge/REST_API-005571?style=flat-square&logo=fastapi&logoColor=white)
+
+### CMS & E-Commerce
+
+![WordPress](https://img.shields.io/badge/WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white)
+![WooCommerce](https://img.shields.io/badge/WooCommerce-96588A?style=flat-square&logo=woocommerce&logoColor=white)
+
+</div>
+
+> WordPress and WooCommerce are part of our capabilities, while our main focus is building custom software and web applications.
 
 ---
 
-## پروژه‌هایی که روی آن‌ها کار می‌کنیم
+<div dir="rtl">
 
-بخشی از حوزه‌های اجرایی و توسعه‌ای نوین‌استک:
+## حوزه پروژه‌ها
 
-- سامانه مدیریت تأمین‌کنندگان
+نوین‌استک روی پروژه‌ها و محصولاتی در این حوزه‌ها فعالیت می‌کند:
+
+- سامانه‌های مدیریت تأمین‌کنندگان
 - فروشگاه‌های اینترنتی اختصاصی
-- افزونه‌های مدیریتی WooCommerce
-- سیستم اعلان سفارش در پیام‌رسان
-- ربات ثبت و مدیریت سفارش
-- ابزارهای قیمت‌گذاری و مدیریت محصول
+- مارکت‌پلیس‌های چندفروشندگی
+- سامانه‌های ثبت و مدیریت سفارش
+- پنل‌های مشتریان و مدیران
 - داشبوردهای مدیریتی
+- ربات‌های ثبت سفارش
+- اتصال فروشگاه به پیام‌رسان‌ها
+- ابزارهای مدیریت محصولات
+- سیستم‌های قیمت‌گذاری
+- نرم‌افزارهای حقوق و دستمزد
 - ابزارهای تاریخ شمسی
-- سامانه‌های حقوق و دستمزد
-- ابزارهای اتوماسیون
-- قالب‌ها و محصولات دیجیتال
-- کتابخانه‌ها و پروژه‌های متن‌باز
+- نرم‌افزارهای دسکتاپ
+- سیستم‌های گزارش‌گیری
+- اتوماسیون‌های سازمانی
+- ابزارهای هوش مصنوعی کاربردی
+- افزونه‌ها و ابزارهای تکمیلی
 - محصولات SaaS
-- مارکت‌پلیس چندفروشندگی
+- کتابخانه‌های متن‌باز
+
+</div>
 
 ---
+
+<div dir="rtl">
 
 ## اصول توسعه در نوین‌استک
 
-ما تلاش می‌کنیم پروژه‌ها بر اساس این اصول توسعه داده شوند:
+ما تلاش می‌کنیم محصولات و پروژه‌ها را بر اساس اصول زیر توسعه دهیم:
 
-- معماری قابل فهم و قابل توسعه
+- تحلیل پیش از توسعه
+- معماری قابل فهم
+- طراحی قابل توسعه
+- جداسازی مسئولیت‌ها
 - نام‌گذاری استاندارد
-- مستندسازی مناسب
 - کنترل نسخه با Git
-- بررسی کد
+- مستندسازی مناسب
 - امنیت پایه
-- تست جریان‌های مهم
-- طراحی واکنش‌گرا
+- مدیریت صحیح خطاها
+- Logging و ثبت رویدادها
+- تست جریان‌های حیاتی
+- طراحی Responsive
 - تجربه کاربری مناسب
-- کاهش وابستگی غیرضروری
-- امکان نگهداری و توسعه در آینده
-- تحویل مرحله‌ای و قابل استفاده
+- کاهش وابستگی‌های غیرضروری
+- تحویل مرحله‌ای
+- امکان نگهداری در بلندمدت
+
+</div>
 
 ---
+
+## Development Principles
+
+```text
+Analyze before building
+Design for maintainability
+Keep responsibilities clear
+Document important decisions
+Automate repetitive workflows
+Test critical paths
+Secure sensitive data
+Deliver usable increments
+Improve continuously
