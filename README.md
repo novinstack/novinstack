@@ -1,5 +1,11 @@
 <div align="center">
 
+[🇮🇷 فارسی](./README.md) · [🇬🇧 English](./README_EN.md)
+
+</div>
+
+<div align="center">
+
 # NovinStack | نوین‌استک
 
 ### از یادگیری تا ساخت محصول
