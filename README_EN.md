@@ -1,46 +1,20 @@
-<div align="center">
+<p align="center">
+  <img src="./assets/novinstack-cover-en.png" alt="NovinStack — Custom Software, Automation and Digital Products" width="100%">
+</p>
 
-# NovinStack
-
-### From Learning to Building Products
-
-**Custom Software · Web Applications · Automation · Practical AI · Digital Products**
-
-<br>
-
-<a href="https://novinstack.com"><img src="https://img.shields.io/badge/Website-novinstack.com-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white" alt="NovinStack Website"></a>
-&nbsp;
-<a href="https://instagram.com/novinstack"><img src="https://img.shields.io/badge/Instagram-@novinstack-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="NovinStack Instagram"></a>
-&nbsp;
-<a href="https://linkedin.com/company/novinstack"><img src="https://img.shields.io/badge/LinkedIn-NovinStack-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="NovinStack LinkedIn"></a>
-&nbsp;
-<a href="https://t.me/novinstack"><img src="https://img.shields.io/badge/Telegram-@novinstack-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="NovinStack Telegram"></a>
-
-<br><br>
-
-> Software development, education, and automation for digital businesses
-
-</div>
+<table align="center">
+  <tr>
+    <td align="center"><a href="./README.md"><strong>🇮🇷 Persian Version</strong></a></td>
+    <td align="center"><strong>🇬🇧 English Version</strong></td>
+  </tr>
+</table>
 
 <div align="center">
 
-### 🌐 Choose Language | انتخاب زبان
-
-<a href="./README.md">
-  <img
-    src="https://img.shields.io/badge/🇮🇷_فارسی-مشاهده_نسخه_فارسی-2563EB?style=for-the-badge"
-    alt="Persian Version"
-  >
-</a>
-&nbsp;
-<a href="./README_EN.md">
-  <img
-    src="https://img.shields.io/badge/🇬🇧_English-Current_Version-16A34A?style=for-the-badge"
-    alt="English Version"
-  >
-</a>
-
-<br><br>
+[![Website](https://img.shields.io/badge/Website-novinstack.com-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://novinstack.com)
+[![Instagram](https://img.shields.io/badge/Instagram-@novinstack-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/novinstack)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-NovinStack-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/company/novinstack)
+[![Telegram](https://img.shields.io/badge/Telegram-@novinstack-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/novinstack)
 
 </div>
 
@@ -50,11 +24,11 @@
 
 **NovinStack** is a software and technology group focused on analyzing, designing, and developing custom software solutions.
 
-Our main areas of work include custom websites, web applications, e-commerce platforms, management panels, reporting dashboards, APIs, enterprise software, business automation, and digital products.
+Our primary areas of work include custom websites, web applications, e-commerce platforms, management panels, analytics dashboards, APIs, enterprise software, business automation, and digital products.
 
-At NovinStack, we turn ideas, operational requirements, and manual workflows into software that is practical, maintainable, and scalable.
+At NovinStack, we turn ideas, operational needs, and manual workflows into practical, maintainable, and scalable software.
 
-We do not just build interfaces or a few web pages. When needed, we cover the complete product lifecycle:
+We do more than build interfaces or a few web pages. When required, we cover the complete product lifecycle:
 
 - Business and requirements analysis
 - Project scope definition
@@ -203,8 +177,8 @@ We do not just build interfaces or a few web pages. When needed, we cover the co
 
 - Backend architecture design
 - REST API development
-- Node.js and Express.js development
 - ASP.NET Core development
+- Node.js and Express.js development
 - PHP and Laravel development
 - Authentication and authorization
 - JWT and OAuth
@@ -354,14 +328,12 @@ NovinStack works on projects and products in areas such as:
 
 We welcome collaboration in:
 
-- Backend development
-- Frontend development
+- Backend and frontend development
 - Mobile and desktop development
 - UI/UX design
 - Software testing
 - DevOps
-- Technical writing
-- Documentation
+- Technical writing and documentation
 - Automation and AI
 - Open-source projects
 - Software product development
@@ -391,21 +363,16 @@ To report a vulnerability or security concern, contact us through:
 
 ## Connect with NovinStack
 
-<a href="https://novinstack.com"><img src="https://img.shields.io/badge/Website-Visit_NovinStack-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"></a>
-&nbsp;
-<a href="https://instagram.com/novinstack"><img src="https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
-&nbsp;
-<a href="https://linkedin.com/company/novinstack"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-&nbsp;
-<a href="https://t.me/novinstack"><img src="https://img.shields.io/badge/Telegram-Join_Channel-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
+[![Website](https://img.shields.io/badge/Website-Visit_NovinStack-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://novinstack.com)
+[![Instagram](https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/novinstack)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/company/novinstack)
+[![Telegram](https://img.shields.io/badge/Telegram-Join_Channel-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/novinstack)
 
-<br><br>
+<br>
 
 ### [Start a Project with NovinStack](https://novinstack.com/contact)
 
 <br>
-
-## NovinStack
 
 ### Learn · Build · Automate · Grow
 
