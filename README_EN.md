@@ -28,17 +28,21 @@ We work from understanding the problem and selecting an appropriate architecture
 
 **Our philosophy:** *Structured Prestige* — disciplined engineering, purposeful simplicity, and lasting quality.
 
-## Our Engineering Mindset
+## NovinStack Build Console — Code You Can Actually Run
 
-```ts
-// A brand philosophy expressed as code — not an installable package.
-export const novinStack = {
-  mission: "From Knowledge to Product",
-  principles: ["Clarity", "Reliability", "Craftsmanship"],
-  process: ["Learn", "Analyze", "Architect", "Build", "Ship", "Improve"],
-  domains: ["Software", "Applied AI", "Automation", "Products"],
-} as const;
-```
+The previous TypeScript object was a brand statement, not executable documentation. We replaced it with a **real browser-based interactive console**. Try `push`, `pop`, `peek`, and `stack` against a working JavaScript LIFO data structure. Explore an interactive visualization of our engineering lifecycle, too.
+
+<a href="https://novinstack.github.io/novinstack/"><img src="./assets/console-preview.svg" width="100%" alt="NovinStack Build Console preview showing real browser-powered stack commands" /></a>
+
+**[→ Launch the interactive console](https://novinstack.github.io/novinstack/)** · [View source](./docs/index.html)
+
+<details>
+  <summary><strong>What can I run?</strong></summary>
+  <p>Run <code>push "Idea"</code>, then <code>push "Product"</code>, and inspect the stack with <code>peek</code> or <code>pop</code>. Type <code>help</code> for all commands.</p>
+  <p>The <code>Learn → Analyze → Architect → Build → Ship → Improve</code> sequence is an educational process simulation, not a real software build/deployment. GitHub READMEs cannot run JavaScript; launch the linked browser application to interact.</p>
+</details>
+
+## Our Engineering Mindset
 
 <p align="center"><img src="./assets/workflow.svg" width="100%" alt="NovinStack engineering workflow: learning, analysis, architecture, development, delivery, and improvement" /></p>
 
