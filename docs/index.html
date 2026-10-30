@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#121E26">
+  <meta name="description" content="NovinStack Build Console — an interactive software engineering playground. Run real stack operations and explore the product lifecycle. کنسول تعاملی نوین‌استک و نوین استک.">
+  <title>NovinStack Build Console | نوین‌استک</title>
+  <link rel="canonical" href="https://novinstack.github.io/novinstack/">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar" aria-label="NovinStack">
+      <a class="brand" href="https://novinstack.com" target="_blank" rel="noopener noreferrer" aria-label="NovinStack website">
+        <span class="brand-mark" aria-hidden="true">N<span class="brand-gold">.</span></span>
+        <span class="brand-text">NovinStack <small>ENGINEERING LAB</small></span>
+      </a>
+      <div class="nav-actions">
+        <a href="https://github.com/novinstack/novinstack" target="_blank" rel="noopener noreferrer" id="repo-link">GitHub ↗</a>
+        <button class="language-toggle" id="langToggle" type="button" title="Change language">EN</button>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Change theme" title="Change theme">◐</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="headline">
+        <div class="eyebrow"><span class="online-dot" aria-hidden="true"></span><span data-i18n="eyebrow">آزمایشگاه تعاملی مهندسی نرم‌افزار</span><span class="tiny-label">/ 001</span></div>
+        <h1 id="headline"><span data-i18n="hero1">دانش را وارد کن.</span><br><em data-i18n="hero2">محصول را بساز.</em></h1>
+        <p class="hero-description" data-i18n="intro">این یک ویترین تصویری نیست؛ دستورهای پشته واقعاً در مرورگر اجرا می‌شوند. چرخه مهندسی محصول هم به‌صورت شبیه‌سازی تعاملی در دسترس است.</p>
+        <div class="hero-tags" aria-label="Domains">
+          <span>SOFTWARE ENGINEERING</span><span>APPLIED AI</span><span>AUTOMATION</span><span>DIGITAL PRODUCTS</span>
+        </div>
+      </section>
+
+      <div class="workspace">
+        <section class="console-panel panel" aria-labelledby="consoleTitle">
+          <div class="panel-header">
+            <div class="window-lights" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="panel-heading"><span id="consoleTitle">novinstack@lab</span><span class="terminal-caption">~/build-console</span></div>
+            <span class="runtime"><span class="online-dot" aria-hidden="true"></span> <span data-i18n="runtime">اجرای محلی</span></span>
+          </div>
+          <div class="terminal-screen" id="terminalOutput" role="log" aria-live="polite" aria-label="Console output"></div>
+          <form id="terminalForm" class="terminal-form" autocomplete="off">
+            <label class="terminal-prompt" for="commandInput">~ <strong>❯</strong></label>
+            <input id="commandInput" name="command" type="text" spellcheck="false" autocapitalize="off" autocomplete="off" placeholder="help" aria-label="Type a command" maxlength="120">
+            <button type="submit" id="runCommand" data-i18n="execute">اجرا</button>
+          </form>
+          <div class="quick-commands" aria-label="Quick commands">
+            <button type="button" data-command="help">help</button>
+            <button type="button" data-command="push \"Idea\"">push "Idea"</button>
+            <button type="button" data-command="peek">peek</button>
+            <button type="button" data-command="pop">pop</button>
+            <button type="button" data-command="flow">flow</button>
+            <button type="button" data-command="clear">clear</button>
+          </div>
+          <p class="terminal-note" data-i18n="terminalNote">دستورها در مرورگر خودتان اجرا می‌شوند؛ هیچ داده‌ای به سرور ارسال نمی‌شود.</p>
+        </section>
+
+        <aside class="right-column">
+          <section class="stack-panel panel" aria-labelledby="stackTitle">
+            <div class="subheading"><span class="number">01 / DATA STRUCTURE</span><span class="live-badge" data-i18n="live">زنده</span></div>
+            <div class="stack-heading"><h2 id="stackTitle" data-i18n="stackTitle">پشته زنده</h2><span class="mini-meta">LIFO</span></div>
+            <p class="small-copy" data-i18n="stackDesc">آخرین ورودی، اولین خروجی. با push و pop مفهوم نام Stack را عملاً تجربه کن.</p>
+            <div class="stack-graphic" id="stackGraphic" aria-label="Interactive stack">
+              <div class="stack-empty" id="stackEmpty" data-i18n="empty">پشته خالی است — push را امتحان کن</div>
+              <div id="stackItems" class="stack-items"></div>
+            </div>
+            <div class="stack-controls">
+              <label for="stackValue" class="sr-only" data-i18n="stackValueLabel">مقدار جدید</label>
+              <input id="stackValue" type="text" placeholder="New layer..." maxlength="26" aria-label="Stack value">
+              <button type="button" id="pushButton">+ push</button>
+              <button type="button" id="popButton" class="outline">− pop</button>
+            </div>
+            <div class="stack-status"><span data-i18n="depth">عمق پشته</span><strong id="stackCount">0</strong><span class="dot-separator">·</span><span data-i18n="top">بالای پشته</span><strong id="stackTop">—</strong></div>
+          </section>
+          <section class="signature panel" aria-label="brand philosophy">
+            <span class="number">THE NOVINSTACK PROTOCOL</span>
+            <p>Learn <span>→</span> Architect <span>→</span> Build <span>→</span> Ship</p>
+            <small data-i18n="signature">از یادگیری تا ساخت محصول</small>
+          </section>
+        </aside>
+      </div>
+
+      <section class="pipeline-panel panel" aria-labelledby="pipelineTitle">
+        <div class="pipeline-head"><div><span class="number">02 / PRODUCT LIFECYCLE</span><h2 id="pipelineTitle" data-i18n="pipelineTitle">مسیر ساخت محصول</h2><p class="small-copy" data-i18n="pipelineDesc">این بخش یک شبیه‌سازی از فرایند است، نه اجرای واقعی Build یا Deploy.</p></div><button type="button" id="pipelineButton" data-i18n="simulate">نمایش فرایند <span aria-hidden="true">↗</span></button></div>
+        <div class="pipeline-steps" id="pipelineSteps" aria-label="Product lifecycle stages">
+          <button type="button" class="pipeline-step" data-step="0"><span>01</span><strong>LEARN</strong><small data-step-label="0">Learning</small><i></i></button>
+          <button type="button" class="pipeline-step" data-step="1"><span>02</span><strong>ANALYZE</strong><small data-step-label="1">Analysis</small><i></i></button>
+          <button type="button" class="pipeline-step" data-step="2"><span>03</span><strong>ARCHITECT</strong><small data-step-label="2">Architecture</small><i></i></button>
+          <button type="button" class="pipeline-step" data-step="3"><span>04</span><strong>BUILD</strong><small data-step-label="3">Development</small><i></i></button>
+          <button type="button" class="pipeline-step" data-step="4"><span>05</span><strong>SHIP</strong><small data-step-label="4">Delivery</small><i></i></button>
+          <button type="button" class="pipeline-step" data-step="5"><span>06</span><strong>IMPROVE</strong><small data-step-label="5">Iteration</small><i></i></button>
+        </div>
+        <div class="stage-detail" aria-live="polite"><span class="stage-symbol">◆</span><div><strong id="stageName">LEARN</strong><p id="stageDetail"></p></div><span class="stage-count" id="stageCount">01 / 06</span></div>
+      </section>
+    </main>
+
+    <footer><span>© <span id="year"></span> NovinStack · <span data-i18n="footerName">نوین‌استک / نوین استک</span></span><span><a href="https://novinstack.com">novinstack.com</a> · <a href="https://github.com/novinstack">GitHub</a></span></footer>
+  </div>
+</body>
+</html>
