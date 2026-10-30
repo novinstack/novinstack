@@ -1,16 +1,19 @@
-<h1 align="center">NovinStack | نوین‌استک</h1>
+<h1 dir="rtl" align="right">NovinStack | نوین‌استک</h1>
 
-<p align="center"><strong>گروه نرم‌افزاری و فناوری نوین‌استک</strong><br>از یادگیری تا ساخت محصول · From Knowledge to Product</p>
-
-<p align="center"><img src="./assets/hero.svg" width="100%" alt="NovinStack Technology Group — مهندسی نرم‌افزار، هوش مصنوعی کاربردی، اتوماسیون و توسعه محصولات دیجیتال" /></p>
+<p dir="rtl" align="right"><strong>گروه نرم‌افزاری و فناوری نوین‌استک</strong><br>از یادگیری تا ساخت محصول · From Knowledge to Product</p>
 
 <p align="center">
-  <strong>🇮🇷 فارسی</strong> &nbsp;·&nbsp; <a href="./README_EN.md"><strong>🇬🇧 English</strong></a>
+  <img src="./assets/hero.svg" width="100%" alt="NovinStack | نوین‌استک — مهندسی نرم‌افزار، هوش مصنوعی کاربردی، اتوماسیون و محصولات دیجیتال" />
 </p>
 
-<p align="center">
+<p dir="rtl" align="right">
+  <strong>🇮🇷 فارسی</strong> &nbsp;·&nbsp;
+  <a href="./README_EN.md"><strong>🇬🇧 English</strong></a>
+</p>
+
+<p align="right" dir="rtl">
   <a href="https://novinstack.com">وب‌سایت رسمی</a> &nbsp;·&nbsp;
-  <a href="https://github.com/novinstack">پروژه‌ها</a> &nbsp;·&nbsp;
+  <a href="https://github.com/novinstack?tab=repositories">مخازن و پروژه‌ها</a> &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/company/novinstack/">لینکدین</a> &nbsp;·&nbsp;
   <a href="https://t.me/novinstack">تلگرام</a> &nbsp;·&nbsp;
   <a href="https://www.youtube.com/@NovinStack">یوتیوب</a>
@@ -20,113 +23,133 @@
 
 <div dir="rtl" align="right">
 
-## درباره نوین‌استک
+<h2>درباره نوین‌استک</h2>
 
-**نوین‌استک (NovinStack)** یک **گروه نرم‌افزاری و فناوری** است؛ از **توسعه نرم‌افزار اختصاصی، وب‌اپلیکیشن، API و سامانه‌های سازمانی** تا **هوش مصنوعی کاربردی، AI Agents، اتوماسیون کسب‌وکار و مهندسی محصولات دیجیتال**.
+<p><strong>نوین‌استک (NovinStack)</strong> یک <strong>گروه نرم‌افزاری و فناوری</strong> است که در حوزه‌های <strong>مهندسی نرم‌افزار، توسعه وب‌اپلیکیشن و سامانه‌های سازمانی، هوش مصنوعی کاربردی، AI Agents، اتوماسیون کسب‌وکار و محصولات دیجیتال</strong> فعالیت می‌کند.</p>
 
-ما دانش و ایده را به راهکار واقعی تبدیل می‌کنیم: مسئله را تحلیل می‌کنیم، معماری مناسب می‌سازیم، کد قابل نگهداری می‌نویسیم و محصول را با بازخورد واقعی بهبود می‌دهیم. در کنار خدمات نرم‌افزاری، توسعه محصولات مستقل و ابزارهای کاربردی برای توسعه‌دهندگان نیز بخشی از مسیر ماست.
+<p>ما از شناخت مسئله و طراحی معماری مناسب تا توسعه، استقرار و بهبود محصول پیش می‌رویم. هدف، تبدیل دانش و ایده به راهکارهای واقعی، قابل نگهداری و توسعه‌پذیر است؛ نه صرفاً ساخت چند صفحه یا فهرست‌کردن فناوری‌ها.</p>
 
-**نام برند:** نگارش رسمی فارسی **نوین‌استک** و نگارش رسمی انگلیسی **NovinStack** است. عبارت‌های **نوین استک** و **Novin Stack** نیز شکل‌های رایج جست‌وجوی همین نام هستند.
+<p><strong>نگارش رسمی برند:</strong> <strong>نوین‌استک</strong> و <strong>NovinStack</strong>. شکل‌های جست‌وجوی <strong>نوین استک</strong> و <strong>Novin Stack</strong> نیز به همین برند اشاره دارند.</p>
 
-**رویکرد ما:** ساختار مهندسی‌شده، سادگی هدفمند و کیفیت ماندگار — *Structured Prestige*.
+<p><strong>فلسفه طراحی و توسعه:</strong> <em>Structured Prestige</em> — سادگی هدفمند، نظم مهندسی و کیفیت ماندگار.</p>
+
+<h2>از ایده تا محصول؛ منطق مهندسی ما</h2>
 
 </div>
 
-### `novinstack.config.ts`
-
 ```ts
+// A brand philosophy expressed as code — not an installable package.
 export const novinStack = {
-  mission: "From knowledge to product",
-  mindset: "Product-first engineering",
-  capabilities: ["Software", "Applied AI", "Automation", "Products"],
-  workflow: ["Learn", "Analyze", "Architect", "Build", "Ship", "Improve"],
-  values: ["Clarity", "Reliability", "Craftsmanship"],
+  mission: "From Knowledge to Product",
+  principles: ["Clarity", "Reliability", "Craftsmanship"],
+  process: ["Learn", "Analyze", "Architect", "Build", "Ship", "Improve"],
+  domains: ["Software", "Applied AI", "Automation", "Products"],
 } as const;
 ```
 
-<div dir="rtl" align="right">
-
-## حوزه‌های تخصصی ما
-
-| حوزه | خدمات و توانمندی‌ها |
-| :--- | :--- |
-| **مهندسی نرم‌افزار** | توسعه نرم‌افزار اختصاصی، وب‌سایت و وب‌اپلیکیشن، Backend و Frontend، REST API، یکپارچه‌سازی سرویس‌ها |
-| **سیستم‌های سازمانی** | پنل مدیریت، داشبورد تحلیلی، مدیریت کاربران و دسترسی‌ها، مدیریت سفارش و تأمین‌کنندگان، گزارش‌گیری |
-| **هوش مصنوعی کاربردی** | AI Agents، جست‌وجوی معنایی، RAG، پردازش داده و اتصال قابلیت‌های AI به محصولات — متناسب با نیاز واقعی |
-| **اتوماسیون کسب‌وکار** | گردش‌کار هوشمند، n8n، ربات‌ها، Webhook و اتصال سامانه‌ها، کاهش کارهای تکراری |
-| **موبایل و دسکتاپ** | اپلیکیشن Android و چندسکویی، نرم‌افزارهای Windows و اتصال آن‌ها به سرویس‌های Backend |
-| **محصولات دیجیتال** | تحلیل محصول، نمونه اولیه و MVP، معماری مقیاس‌پذیر، توسعه و بهبود مستمر |
-| **آموزش و ابزار توسعه‌دهندگان** | تولید محتوای فنی، مستندات، ابزارهای عمومی و پروژه‌های قابل مشارکت |
-
-> فناوری برای ما ابزار حل مسئله است؛ نه فهرستی از نام‌های پرزرق‌وبرق.
-
-## از دانش تا محصول
-
-</div>
-
-<p align="center"><img src="./assets/workflow.svg" width="100%" alt="چرخه تولید محصول NovinStack: یادگیری و تحقیق، طراحی راهکار، مهندسی و یکپارچه‌سازی، عرضه و بهبود مستمر" /></p>
+<p align="center">
+  <img src="./assets/workflow.svg" width="100%" alt="فرایند مهندسی محصول نوین‌استک: یادگیری و تحلیل، طراحی معماری، توسعه، عرضه و بهبود مستمر" />
+</p>
 
 <div dir="rtl" align="right">
 
-**تحلیل پیش از توسعه · معماری متناسب با مسئله · کد قابل نگهداری · آزمون مسیرهای حیاتی · استقرار قابل اتکا · بهبود تدریجی**
+<p><strong>تحلیل پیش از توسعه · معماری متناسب با نیاز · کد قابل نگهداری · آزمون مسیرهای حیاتی · استقرار قابل اتکا · بهبود تدریجی</strong></p>
 
-## پروژه منتشرشده و قابل بررسی
+<h2>حوزه‌های تخصصی</h2>
 
-### [NovinStack React DatePicker](https://github.com/novinstack/react-datepicker)
+<table dir="rtl" width="100%">
+  <thead>
+    <tr>
+      <th dir="rtl" align="right">حوزه</th>
+      <th dir="rtl" align="right">توانمندی‌ها</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td dir="rtl" align="right"><strong>مهندسی نرم‌افزار</strong></td>
+      <td dir="rtl" align="right">توسعه نرم‌افزار اختصاصی، وب‌سایت و وب‌اپلیکیشن، فرانت‌اند و بک‌اند، طراحی API و یکپارچه‌سازی سرویس‌ها</td>
+    </tr>
+    <tr>
+      <td dir="rtl" align="right"><strong>سیستم‌های سازمانی</strong></td>
+      <td dir="rtl" align="right">سامانه‌های مدیریتی، داشبوردهای تحلیلی، کنترل دسترسی، مدیریت سفارش، تأمین‌کنندگان و گزارش‌گیری</td>
+    </tr>
+    <tr>
+      <td dir="rtl" align="right"><strong>هوش مصنوعی کاربردی</strong></td>
+      <td dir="rtl" align="right">عامل‌های هوشمند (AI Agents)، جست‌وجوی معنایی، RAG، پردازش اطلاعات و افزودن قابلیت‌های هوشمند متناسب با مسئله</td>
+    </tr>
+    <tr>
+      <td dir="rtl" align="right"><strong>اتوماسیون</strong></td>
+      <td dir="rtl" align="right">طراحی گردش‌کار، n8n، ربات‌ها، Webhook، اتصال ابزارها و کاهش فعالیت‌های تکراری</td>
+    </tr>
+    <tr>
+      <td dir="rtl" align="right"><strong>موبایل و دسکتاپ</strong></td>
+      <td dir="rtl" align="right">اپلیکیشن‌های Android و چندسکویی، نرم‌افزارهای Windows و اتصال آن‌ها به زیرساخت Backend</td>
+    </tr>
+    <tr>
+      <td dir="rtl" align="right"><strong>توسعه محصول</strong></td>
+      <td dir="rtl" align="right">تحلیل محصول، نمونه اولیه و MVP، طراحی معماری قابل توسعه، عرضه تدریجی و بهبود محصول</td>
+    </tr>
+    <tr>
+      <td dir="rtl" align="right"><strong>آموزش و ابزار توسعه‌دهندگان</strong></td>
+      <td dir="rtl" align="right">محتوای آموزشی و فنی، مستندسازی، ابزارهای کاربردی و پروژه‌های قابل مشارکت</td>
+    </tr>
+  </tbody>
+</table>
 
-یک DatePicker برای **React و TypeScript** با پشتیبانی از تقویم‌های **جلالی (شمسی)، هجری و میلادی**، چیدمان **RTL/LTR**، انتخاب بازه و امکانات سفارشی‌سازی.
+<h2>مسیرهای فعالیت نوین‌استک</h2>
 
-- [مشاهده کد و مستندات پروژه](https://github.com/novinstack/react-datepicker)
-- [بسته `@novinstack/react-datepicker` در npm](https://www.npmjs.com/package/@novinstack/react-datepicker)
-- **مجوز:** کد پروژه عمومی و قابل مشاهده است، اما مجوز فعلی آن برای بازانتشار مستقل محدودیت دارد. برای شرایط دقیق، فایل `LICENSE` همان مخزن را بخوانید؛ این مجوز را نباید با مجوزهای آزاد مورد تأیید OSI یکسان دانست.
+<table dir="rtl" width="100%">
+  <thead>
+    <tr>
+      <th dir="rtl" align="right">مسیر</th>
+      <th dir="rtl" align="right">تمرکز</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td dir="rtl" align="right"><strong>Software</strong></td><td dir="rtl" align="right">توسعه نرم‌افزار و مهندسی سیستم‌ها</td></tr>
+    <tr><td dir="rtl" align="right"><strong>Automation</strong></td><td dir="rtl" align="right">یکپارچه‌سازی، اتوماسیون و هوش مصنوعی کاربردی</td></tr>
+    <tr><td dir="rtl" align="right"><strong>Academy / Start</strong></td><td dir="rtl" align="right">آموزش فناوری و مسیر ورود به برنامه‌نویسی</td></tr>
+    <tr><td dir="rtl" align="right"><strong>Dev</strong></td><td dir="rtl" align="right">مهندسی نرم‌افزار، ابزارهای توسعه و محتوای تخصصی</td></tr>
+    <tr><td dir="rtl" align="right"><strong>Growth</strong></td><td dir="rtl" align="right">بهینه‌سازی فنی، تجربه کاربری و رشد دیجیتال</td></tr>
+    <tr><td dir="rtl" align="right"><strong>Labs</strong></td><td dir="rtl" align="right">پژوهش، آزمایش فنی و طراحی MVP</td></tr>
+    <tr><td dir="rtl" align="right"><strong>Products</strong></td><td dir="rtl" align="right">توسعه راهکارها و محصولات دیجیتال مستقل</td></tr>
+  </tbody>
+</table>
 
-**توجه:** سایر ابزارها، محصولات مستقل و ایده‌های پژوهشی NovinStack در مراحل متفاوتی هستند؛ صرف اشاره به یک حوزه به معنای انتشار محصول نهایی نیست.
+<h2>پروژه‌ها و ابزارها</h2>
 
-## ساختار فعالیت NovinStack
+<p>فهرست پروژه‌های منتشرشده و در دسترس به‌صورت مستقل در <a href="https://github.com/novinstack?tab=repositories"><strong>مخازن GitHub نوین‌استک</strong></a> نگهداری می‌شود. برای دیدن پروژه‌های منتخب می‌توانید به بخش <strong>Pinned</strong> پروفایل مراجعه کنید؛ به این ترتیب با اضافه‌شدن هر محصول، نیازی به ویرایش این معرفی ثابت نیست.</p>
 
-| مسیر | تمرکز |
-| :--- | :--- |
-| **Software** | توسعه نرم‌افزار اختصاصی و مهندسی سیستم‌ها |
-| **Automation** | یکپارچه‌سازی، گردش‌کارهای هوشمند و AI کاربردی |
-| **Academy / Start** | آموزش برنامه‌نویسی و مسیر ورود به فناوری |
-| **Dev** | مهندسی نرم‌افزار، ابزارهای توسعه و دانش تخصصی |
-| **Growth** | تجربه کاربری، بهینه‌سازی فنی و رشد دیجیتال |
-| **Labs** | پژوهش، آزمایش فنی و ساخت MVP |
-| **Products** | توسعه محصولات و راهکارهای دیجیتال مستقل |
+<p><strong>شفافیت انتشار:</strong> معرفی یک حوزه فعالیت یا ایده پژوهشی، به معنای آماده‌بودن یا انتشار عمومی محصول مربوط به آن نیست.</p>
 
-</div>
-
-<details>
-<summary><strong>🧩 فناوری‌ها و ابزارهای مرتبط با فعالیت‌های ما / Technology Stack</strong></summary>
-
-<br>
-
-| لایه | فناوری‌ها و ابزارها |
-| :--- | :--- |
-| **Backend** | C#, .NET / ASP.NET Core, Node.js, PHP / Laravel, Python / FastAPI |
-| **Frontend** | TypeScript, JavaScript, React, Next.js, Vue, HTML, CSS, Tailwind CSS |
-| **Data** | SQL Server, PostgreSQL, MySQL, SQLite, MongoDB, Redis |
-| **Mobile & Desktop** | Android, Kotlin, Flutter, .NET MAUI, WPF, WinForms |
-| **Infrastructure** | Git, GitHub, Docker, Nginx, Azure |
-| **Automation & AI** | n8n, REST API, Webhooks, Telegram Bots, AI integrations |
-| **Additional** | WordPress, WooCommerce (when appropriate) |
-
-> فهرست بالا حوزه مهارت و ابزارهای مرتبط است؛ به این معنا نیست که همه فناوری‌ها در تمام پروژه‌ها استفاده می‌شوند.
-
+<details dir="rtl">
+  <summary dir="rtl"><strong>فناوری‌ها و ابزارها — مشاهده فهرست تخصصی</strong></summary>
+  <br>
+  <table dir="rtl" width="100%">
+    <thead><tr><th dir="rtl" align="right">لایه</th><th dir="rtl" align="right">فناوری‌ها</th></tr></thead>
+    <tbody>
+      <tr><td dir="rtl" align="right"><strong>Backend</strong></td><td dir="rtl" align="right">C#, .NET / ASP.NET Core, Node.js, PHP / Laravel, Python / FastAPI</td></tr>
+      <tr><td dir="rtl" align="right"><strong>Frontend</strong></td><td dir="rtl" align="right">TypeScript, JavaScript, React, Next.js, Vue, HTML, CSS, Tailwind CSS</td></tr>
+      <tr><td dir="rtl" align="right"><strong>Data</strong></td><td dir="rtl" align="right">SQL Server, PostgreSQL, MySQL, SQLite, MongoDB, Redis</td></tr>
+      <tr><td dir="rtl" align="right"><strong>Mobile &amp; Desktop</strong></td><td dir="rtl" align="right">Android, Kotlin, Flutter, .NET MAUI, WPF, WinForms</td></tr>
+      <tr><td dir="rtl" align="right"><strong>Infrastructure</strong></td><td dir="rtl" align="right">Git, GitHub, Docker, Nginx, Azure</td></tr>
+      <tr><td dir="rtl" align="right"><strong>Automation &amp; AI</strong></td><td dir="rtl" align="right">n8n, REST API, Webhooks, Telegram Bots, AI Integrations</td></tr>
+      <tr><td dir="rtl" align="right"><strong>Additional</strong></td><td dir="rtl" align="right">WordPress, WooCommerce (در صورت تناسب با نیاز پروژه)</td></tr>
+    </tbody>
+  </table>
+  <p>این موارد حوزه توانمندی‌ها و ابزارهای مرتبط هستند، نه فهرست فناوری‌های مورد استفاده در تمام پروژه‌ها.</p>
 </details>
 
-<div dir="rtl" align="right">
+<h2>همکاری و مشارکت</h2>
 
-## همکاری و مشارکت
+<p>برای توسعه نرم‌افزار، همکاری فنی، مستندسازی، ثبت Issue یا ارسال Pull Request می‌توانید <a href="https://github.com/novinstack?tab=repositories">مخزن مرتبط</a> را بررسی کنید. برای مشاوره تخصصی، سفارش پروژه یا ارتباط سازمانی، به <a href="https://novinstack.com">وب‌سایت نوین‌استک</a> مراجعه کنید.</p>
 
-برای **همکاری در توسعه نرم‌افزار، مشارکت در ابزارهای توسعه‌دهندگان، مستندسازی، ثبت Issue یا ارائه Pull Request** می‌توانید مخزن مرتبط را بررسی کنید. برای سفارش پروژه، مشاوره فنی یا ارتباط سازمانی از [وب‌سایت نوین‌استک](https://novinstack.com) استفاده کنید.
-
-**گزارش امنیتی:** آسیب‌پذیری‌ها را در Issue عمومی منتشر نکنید؛ ابتدا از طریق [صفحه تماس](https://novinstack.com/contact) ارتباط بگیرید.
+<p><strong>گزارش امنیتی:</strong> آسیب‌پذیری‌ها را در Issue عمومی منتشر نکنید؛ ابتدا از طریق <a href="https://novinstack.com/contact">صفحه تماس رسمی</a> اطلاع دهید.</p>
 
 </div>
 
 ---
 
-<p align="center"><img src="./assets/footer.svg" width="100%" alt="NovinStack — Engineering ideas into reality | نوین‌استک: از یادگیری تا ساخت محصول" /></p>
+<p align="center"><img src="./assets/footer.svg" width="100%" alt="NovinStack — From Knowledge to Product | از یادگیری تا ساخت محصول" /></p>
 
-<p align="center"><strong>از یادگیری تا ساخت محصول</strong><br><sub>NovinStack · Software Engineering · Applied AI · Automation · Digital Products</sub></p>
+<p align="right" dir="rtl"><strong>از یادگیری تا ساخت محصول</strong><br><sub>NovinStack · Software Engineering · Applied AI · Automation · Digital Products</sub></p>
