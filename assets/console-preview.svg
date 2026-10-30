@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="490" viewBox="0 0 1400 490" role="img" aria-label="NovinStack Build Console preview — run real push, pop, and peek stack commands">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#121E26"/><stop offset="1" stop-color="#092F37"/></linearGradient>
+    <linearGradient id="card" x1="0" x2="1"><stop stop-color="#0D2029"/><stop offset="1" stop-color="#112C34"/></linearGradient>
+    <linearGradient id="gold" x1="0" x2="1"><stop stop-color="#C7A76C"/><stop offset="1" stop-color="#E1CA99"/></linearGradient>
+    <pattern id="grid" width="35" height="35" patternUnits="userSpaceOnUse"><path d="M35 0H0V35" fill="none" stroke="#4E8085" stroke-opacity=".13" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="1400" height="490" rx="24" fill="url(#bg)"/>
+  <rect width="1400" height="490" rx="24" fill="url(#grid)"/>
+  <rect x="40" y="37" width="1320" height="417" rx="15" fill="#09181F" stroke="#37626B" stroke-width="1.5"/>
+  <path d="M40 90H1360" stroke="#37626B"/>
+  <circle cx="72" cy="64" r="6" fill="#C7A76C"/><circle cx="94" cy="64" r="6" fill="#0C7E86"/><circle cx="116" cy="64" r="6" fill="#355C65"/>
+  <text x="146" y="69" font-family="ui-monospace,Consolas,monospace" font-size="16" fill="#C5DBDB">novinstack@lab:~/build-console</text>
+  <rect x="1116" y="47" width="210" height="31" rx="15" fill="#12373C" stroke="#2D6C6F"/>
+  <circle cx="1141" cy="62" r="5" fill="#56BDB3"/><text x="1160" y="68" font-family="ui-monospace,monospace" font-size="13" fill="#9AD8CF">BROWSER RUNTIME</text>
+  <g font-family="ui-monospace,Consolas,monospace" font-size="19">
+    <text x="80" y="137" fill="#C7A76C">$</text><text x="114" y="137" fill="#F5F9F7">novinstack help</text>
+    <text x="80" y="178" font-size="16" fill="#8FABAD">available: push · pop · peek · stack · flow · run</text>
+    <text x="80" y="231" fill="#C7A76C">$</text><text x="114" y="231" fill="#F5F9F7">push "Knowledge"</text>
+    <text x="80" y="264" font-size="16" fill="#71BAB3">✓ pushed Knowledge</text>
+    <text x="80" y="313" fill="#C7A76C">$</text><text x="114" y="313" fill="#F5F9F7">push "Product"</text>
+    <text x="80" y="346" font-size="16" fill="#71BAB3">✓ pushed Product</text>
+    <text x="80" y="396" fill="#C7A76C">$</text><text x="114" y="396" fill="#F5F9F7">peek</text>
+    <text x="190" y="396" font-size="16" fill="#E0C58C">→ Product</text>
+  </g>
+  <path d="M730 122V419" stroke="#37626B"/>
+  <text x="772" y="150" fill="#C7A76C" font-size="15" font-family="ui-monospace,monospace" font-weight="600" letter-spacing="2">LIVE STACK / LIFO</text>
+  <rect x="775" y="187" width="540" height="173" rx="12" fill="url(#card)" stroke="#37626B"/>
+  <rect x="798" y="207" width="494" height="57" rx="7" fill="url(#gold)"/>
+  <text x="822" y="242" fill="#121E26" font-family="ui-monospace,monospace" font-size="19" font-weight="700">01  PRODUCT</text>
+  <rect x="798" y="275" width="494" height="57" rx="7" fill="#0A626D" stroke="#3B9595"/>
+  <text x="822" y="310" fill="#F2F8F5" font-family="ui-monospace,monospace" font-size="19" font-weight="700">00  KNOWLEDGE</text>
+  <text x="775" y="405" fill="#92B5B8" font-family="ui-monospace,monospace" font-size="15">REAL JAVASCRIPT INTERACTION</text>
+  <text x="1320" y="435" fill="#C7A76C" text-anchor="end" font-family="ui-monospace,monospace" font-size="14" font-weight="700">OPEN CONSOLE ↗</text>
+</svg>
