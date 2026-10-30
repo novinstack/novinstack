@@ -33,25 +33,23 @@
 
 <p><strong>فلسفه طراحی و توسعه:</strong> <em>Structured Prestige</em> — سادگی هدفمند، نظم مهندسی و کیفیت ماندگار.</p>
 
+<h2>NovinStack Build Console — یک تجربه برنامه‌نویسی واقعی</h2>
+
+<p>به‌جای نمایش یک قطعه TypeScript که در README اجرا نمی‌شود، یک <strong>کنسول تعاملی</strong> ساخته‌ایم: دستورهای <code>push</code>، <code>pop</code>، <code>peek</code> و <code>stack</code> واقعاً با JavaScript روی یک پشته اجرا می‌شوند. مسیر توسعه محصول نیز به‌صورت شبیه‌سازی قابل بررسی است.</p>
+
+<p><a href="https://novinstack.github.io/novinstack/"><img src="./assets/console-preview.svg" width="100%" alt="پیش‌نمایش NovinStack Build Console؛ اجرای واقعی دستورات پشته در مرورگر با هویت سبزآبی و طلایی نوین‌استک" /></a></p>
+
+<p><strong><a href="https://novinstack.github.io/novinstack/">← اجرای کنسول تعاملی NovinStack</a></strong> &nbsp;·&nbsp; <a href="./docs/index.html">مشاهده سورس</a></p>
+
+<details dir="rtl"><summary dir="rtl"><strong>این کنسول چه دستورهایی اجرا می‌کند؟</strong></summary>
+<p>برای آزمایش ساختار داده واقعی پشته، در کنسول دستورهای <code>push "Idea"</code>، سپس <code>push "Product"</code>، و در ادامه <code>peek</code> یا <code>pop</code> را وارد کنید. برای راهنمای کامل دستور <code>help</code> را اجرا کنید.</p>
+<p>نمایش مراحل <code>Learn → Analyze → Architect → Build → Ship → Improve</code> شبیه‌سازی آموزشی است و به معنای اجرای واقعی Build یا Deploy نیست. برای اجرای JavaScript باید لینک بالا را در مرورگر باز کنید؛ کدهای README توسط GitHub اجرا نمی‌شوند.</p>
+</details>
+
 <h2>از ایده تا محصول؛ منطق مهندسی ما</h2>
 
-</div>
+<p><img src="./assets/workflow.svg" width="100%" alt="فرایند مهندسی محصول نوین‌استک: یادگیری و تحلیل، معماری، توسعه، عرضه و بهبود مستمر" /></p>
 
-```ts
-// A brand philosophy expressed as code — not an installable package.
-export const novinStack = {
-  mission: "From Knowledge to Product",
-  principles: ["Clarity", "Reliability", "Craftsmanship"],
-  process: ["Learn", "Analyze", "Architect", "Build", "Ship", "Improve"],
-  domains: ["Software", "Applied AI", "Automation", "Products"],
-} as const;
-```
-
-<p align="center">
-  <img src="./assets/workflow.svg" width="100%" alt="فرایند مهندسی محصول نوین‌استک: یادگیری و تحلیل، طراحی معماری، توسعه، عرضه و بهبود مستمر" />
-</p>
-
-<div dir="rtl" align="right">
 
 <p><strong>تحلیل پیش از توسعه · معماری متناسب با نیاز · کد قابل نگهداری · آزمون مسیرهای حیاتی · استقرار قابل اتکا · بهبود تدریجی</strong></p>
 
