@@ -1,381 +1,116 @@
+<h1 align="center">NovinStack | Software Engineering & Technology</h1>
+
+<p align="center"><strong>NovinStack Technology Group</strong><br>From Knowledge to Product · از یادگیری تا ساخت محصول</p>
+
+<p align="center"><img src="./assets/hero.svg" width="100%" alt="NovinStack Technology Group — software engineering, applied AI, automation, and digital product development" /></p>
+
 <p align="center">
-  <img src="./assets/novinstack-cover-en.png" alt="NovinStack — Custom Software, Automation and Digital Products" width="100%">
+  <a href="./README.md"><strong>🇮🇷 فارسی</strong></a> &nbsp;·&nbsp; <strong>🇬🇧 English</strong>
 </p>
 
-<table align="center">
-  <tr>
-    <td align="center"><a href="./README.md"><strong>🇮🇷 Persian Version</strong></a></td>
-    <td align="center"><strong>🇬🇧 English Version</strong></td>
-  </tr>
-</table>
-
-<div align="center">
-
-[![Website](https://img.shields.io/badge/Website-novinstack.com-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://novinstack.com)
-[![Instagram](https://img.shields.io/badge/Instagram-@novinstack-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/novinstack)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-NovinStack-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/company/novinstack)
-[![Telegram](https://img.shields.io/badge/Telegram-@novinstack-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/novinstack)
-
-</div>
+<p align="center">
+  <a href="https://novinstack.com">Website</a> &nbsp;·&nbsp;
+  <a href="https://github.com/novinstack">Repositories</a> &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/company/novinstack/">LinkedIn</a> &nbsp;·&nbsp;
+  <a href="https://t.me/novinstack">Telegram</a> &nbsp;·&nbsp;
+  <a href="https://www.youtube.com/@NovinStack">YouTube</a>
+</p>
 
 ---
 
 ## About NovinStack
 
-**NovinStack** is a software and technology group focused on analyzing, designing, and developing custom software solutions.
+**NovinStack** is a **software engineering and technology group** building **custom software**, **web applications**, **APIs**, **enterprise systems**, **applied AI solutions**, **AI agents**, **business automation**, and **digital products**.
 
-Our primary areas of work include custom websites, web applications, e-commerce platforms, management panels, analytics dashboards, APIs, enterprise software, business automation, and digital products.
+We turn knowledge and ideas into practical solutions: analyze the challenge, choose an appropriate architecture, write maintainable code, ship thoughtfully, and improve through real-world feedback. Alongside client software projects, our longer-term direction includes original digital products and useful tools for developers.
 
-At NovinStack, we turn ideas, operational needs, and manual workflows into practical, maintainable, and scalable software.
+**Brand spelling:** Our official English name is **NovinStack** (one word); **Novin Stack** is a commonly used spaced search form. In Persian, the brand is written **نوین‌استک** (official) or **نوین استک** (without the half-space). Both refer to the same technology group.
 
-We do more than build interfaces or a few web pages. When required, we cover the complete product lifecycle:
+Our design philosophy is **Structured Prestige**: engineering discipline, purposeful simplicity, and lasting quality.
 
-- Business and requirements analysis
-- Project scope definition
-- Software architecture
-- Database and data structure design
-- UI and user experience design
-- Backend and frontend development
-- API design and development
-- Third-party service integration
-- Testing and quality assurance
-- Deployment and launch
-- Maintenance and future development
+### `novinstack.config.ts`
 
----
+```ts
+export const novinStack = {
+  mission: "From knowledge to product",
+  mindset: "Product-first engineering",
+  capabilities: ["Software", "Applied AI", "Automation", "Products"],
+  workflow: ["Learn", "Analyze", "Architect", "Build", "Ship", "Improve"],
+  values: ["Clarity", "Reliability", "Craftsmanship"],
+} as const;
+```
 
 ## What We Build
 
-<table width="100%">
-  <tr>
-    <td width="50%" valign="top" align="left">
-      <h3>🌐 Custom Websites & Web Applications</h3>
-      <ul>
-        <li>Custom websites</li>
-        <li>Web-based systems</li>
-        <li>Service platforms</li>
-        <li>Enterprise portals</li>
-        <li>Custom e-commerce platforms</li>
-        <li>Multi-vendor marketplaces</li>
-        <li>Customer and user panels</li>
-        <li>Order registration and tracking systems</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top" align="left">
-      <h3>📊 Management Systems</h3>
-      <ul>
-        <li>Admin panels</li>
-        <li>Analytics dashboards</li>
-        <li>Reporting systems</li>
-        <li>User and access management</li>
-        <li>Sales and order management</li>
-        <li>Supplier management</li>
-        <li>Internal enterprise systems</li>
-        <li>Workflow management tools</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top" align="left">
-      <h3>🔗 Backend & API</h3>
-      <ul>
-        <li>RESTful APIs</li>
-        <li>Backend architecture</li>
-        <li>Authentication and authorization</li>
-        <li>Third-party integrations</li>
-        <li>Webhooks and callbacks</li>
-        <li>Payment processing</li>
-        <li>Data processing and storage</li>
-        <li>Logging and error handling</li>
-        <li>API documentation</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top" align="left">
-      <h3>🤖 Automation & Practical AI</h3>
-      <ul>
-        <li>n8n workflow automation</li>
-        <li>Telegram bots</li>
-        <li>Website-to-messenger integration</li>
-        <li>Automated reporting</li>
-        <li>Smart workflows</li>
-        <li>AI service integration</li>
-        <li>Data processing and classification</li>
-        <li>Automation of repetitive tasks</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top" align="left">
-      <h3>🖥️ Desktop Software</h3>
-      <ul>
-        <li>Management software</li>
-        <li>Offline enterprise tools</li>
-        <li>Calculation systems</li>
-        <li>Data entry and processing tools</li>
-        <li>Windows-based applications</li>
-        <li>Desktop-to-API integration</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top" align="left">
-      <h3>📱 Mobile Applications</h3>
-      <ul>
-        <li>Android applications</li>
-        <li>Cross-platform applications</li>
-        <li>Flutter applications</li>
-        <li>.NET MAUI applications</li>
-        <li>Mobile-to-backend integration</li>
-        <li>Offline storage and data synchronization</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+| Focus | Capabilities |
+| :--- | :--- |
+| **Software Engineering** | Custom websites and web apps, backend and frontend systems, REST APIs, service integrations |
+| **Enterprise Systems** | Admin panels, analytics dashboards, access control, ordering and supplier management, reporting |
+| **Applied Artificial Intelligence** | AI agents, semantic search, RAG, intelligent data processing, and AI integration when it solves a real problem |
+| **Business Automation** | Workflows, n8n, bots, webhooks, connected services, and repetitive-task automation |
+| **Mobile & Desktop** | Android and cross-platform apps, Windows software, backend-connected client applications |
+| **Digital Product Engineering** | Product discovery, prototypes and MVPs, maintainable architecture, iterative delivery |
+| **Education & Developer Tools** | Technical learning, documentation, developer utilities, and collaborative projects |
 
----
+> We select technology to solve problems—not to make a technology list longer.
 
-## NovinStack Divisions
+## The Engineering Workflow
 
-| Division | Focus |
-|---|---|
-| **NovinStack Software** | Custom websites, web applications, mobile apps, dashboards, APIs, and software systems |
-| **NovinStack Automation** | Workflow automation, bots, service integrations, and practical AI |
-| **NovinStack Academy** | Programming education, software architecture, and project-based learning |
-| **NovinStack Growth** | Technical SEO, optimization, content, and digital growth |
-| **NovinStack Labs** | MVPs, experimental tools, open-source projects, and beta products |
-| **NovinStack Products** | Ready-to-use software products, tools, and digital solutions |
+<p align="center"><img src="./assets/workflow.svg" width="100%" alt="NovinStack engineering workflow: learn and research, design, engineer and integrate, deliver and improve" /></p>
 
----
+**Analyze before building · Architect for the problem · Write maintainable code · Test critical paths · Deploy reliably · Iterate deliberately**
 
-## Software Development Services
+## Featured Public Repository
 
-### Custom Website Development
+### [NovinStack React DatePicker](https://github.com/novinstack/react-datepicker)
 
-- Custom corporate and service websites
-- Custom e-commerce platforms
-- Multi-role systems
-- Customer and admin panels
-- Figma-to-code implementation
-- Fully responsive design
-- Modern user interfaces
-- User experience optimization
-- Frontend-to-API integration
-- Custom business features
+A **React and TypeScript DatePicker** supporting **Jalali (Persian/Shamsi)**, **Hijri (Islamic)**, and **Gregorian** calendars, **RTL/LTR**, date-range selection, and customizable components.
 
-### Management Systems
+- [Explore code and documentation](https://github.com/novinstack/react-datepicker)
+- [View `@novinstack/react-datepicker` on npm](https://www.npmjs.com/package/@novinstack/react-datepicker)
+- **License note:** The source is publicly viewable, but its current license restricts standalone redistribution/rebranding. Read the repository's `LICENSE` for the authoritative terms; do not assume it is released under an OSI-approved open-source license.
 
-- User and role management
-- Advanced access control
-- Product and service management
-- Order management
-- Supplier management
-- Executive reporting
-- Analytics dashboards
-- Excel and PDF exports
-- Change history and audit logs
-- Notification systems
+**Roadmap transparency:** Other product ideas and developer tools may still be under exploration or development. We do not present unreleased work as shipped software.
 
-### Backend Development
+## NovinStack Ecosystem
 
-- Backend architecture design
-- REST API development
-- ASP.NET Core development
-- Node.js and Express.js development
-- PHP and Laravel development
-- Authentication and authorization
-- JWT and OAuth
-- File and attachment management
-- Payment gateway integration
-- Third-party service integration
-- Scheduled jobs
-- Error handling and logging
+| Area | Purpose |
+| :--- | :--- |
+| **Software** | Custom software engineering and systems development |
+| **Automation** | Integrations, intelligent workflows, and practical AI |
+| **Academy / Start** | Programming education and foundational technology learning |
+| **Dev** | Advanced software engineering, developer tools, and technical knowledge |
+| **Growth** | Technical optimization, user experience, and digital growth |
+| **Labs** | Research, experiments, prototypes, and MVPs |
+| **Products** | Independent digital products and software solutions |
 
-### Software Analysis & Architecture
-
-- Requirements analysis
-- Use case design
-- Database design
-- ERD and UML
-- Sequence diagrams
-- Activity diagrams
-- Clean Architecture
-- Layered architecture
-- Technical documentation
-
-### Business Automation
-
-- Website-to-messenger integration
-- Automated order notifications
-- Order status notifications
-- Form-to-system integration
-- Daily and periodic reports
-- Google Sheets integration
-- API integrations
-- Sales and support automation
-- Reduction of manual work
-- Smart workflow design
-
----
-
-## Technologies
-
-<div align="center">
-
-### Backend & Application Development
-
-![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=csharp&logoColor=white)
-![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white)
-![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-512BD4?style=flat-square&logo=dotnet&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)
-
-### Frontend
-
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
-
-### Data & Database
-
-![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-
-### Mobile & Desktop
-
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)
-![.NET MAUI](https://img.shields.io/badge/.NET_MAUI-512BD4?style=flat-square&logo=dotnet&logoColor=white)
-![WPF](https://img.shields.io/badge/WPF-512BD4?style=flat-square&logo=dotnet&logoColor=white)
-![WinForms](https://img.shields.io/badge/WinForms-512BD4?style=flat-square&logo=dotnet&logoColor=white)
-
-### DevOps & Infrastructure
-
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-0078D7?style=flat-square&logo=azuredevops&logoColor=white)
-
-### Automation & Integrations
-
-![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white)
-![Telegram](https://img.shields.io/badge/Telegram_Bot-26A5E4?style=flat-square&logo=telegram&logoColor=white)
-![OpenAI](https://img.shields.io/badge/AI_Integration-412991?style=flat-square&logo=openai&logoColor=white)
-![REST API](https://img.shields.io/badge/REST_API-005571?style=flat-square&logo=fastapi&logoColor=white)
-
-### Additional Capabilities
-
-![WordPress](https://img.shields.io/badge/WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white)
-![WooCommerce](https://img.shields.io/badge/WooCommerce-96588A?style=flat-square&logo=woocommerce&logoColor=white)
-
-</div>
-
-> Our main focus is custom software and web application development. WordPress and WooCommerce are additional capabilities used when they fit the project requirements.
-
----
-
-## Project Areas
-
-NovinStack works on projects and products in areas such as:
-
-- Custom websites and web applications
-- Custom e-commerce platforms
-- Multi-vendor marketplaces
-- Supplier management systems
-- Order registration and management systems
-- Customer and admin panels
-- Management dashboards
-- Telegram ordering bots
-- Website-to-messenger integrations
-- Product management tools
-- Pricing systems
-- Payroll software
-- Persian calendar tools
-- Enterprise and desktop software
-- Reporting systems
-- Business automation
-- Practical AI tools
-- SaaS products
-- Open-source libraries and tools
-
----
-
-## Development Principles
-
-| Stage | Main Practices |
-|---|---|
-| 🔍 **Before Development** | Requirements analysis, scope definition, acceptance criteria, database design, and architecture selection |
-| 💻 **During Development** | Standard naming, separation of concerns, Git version control, error handling, and documentation |
-| ✅ **Before Delivery** | Critical-path testing, basic security review, responsive checks, backup preparation, and deployment documentation |
-
----
-
-## Collaboration
-
-We welcome collaboration in:
-
-- Backend and frontend development
-- Mobile and desktop development
-- UI/UX design
-- Software testing
-- DevOps
-- Technical writing and documentation
-- Automation and AI
-- Open-source projects
-- Software product development
-
-Ways to contribute:
-
-- Report bugs
-- Suggest new features
-- Improve documentation
-- Submit pull requests
-- Contribute to open-source tools
-- Provide feedback on beta products
-
----
-
-## Security Reports
-
-Please do not disclose security vulnerabilities in public issues.
-
-To report a vulnerability or security concern, contact us through:
-
-### [novinstack.com/contact](https://novinstack.com/contact)
-
----
-
-<div align="center">
-
-## Connect with NovinStack
-
-[![Website](https://img.shields.io/badge/Website-Visit_NovinStack-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://novinstack.com)
-[![Instagram](https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/novinstack)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/company/novinstack)
-[![Telegram](https://img.shields.io/badge/Telegram-Join_Channel-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/novinstack)
+<details>
+<summary><strong>🧩 Technology Stack & Capabilities</strong></summary>
 
 <br>
 
-### [Start a Project with NovinStack](https://novinstack.com/contact)
+| Layer | Technologies and tools |
+| :--- | :--- |
+| **Backend** | C#, .NET / ASP.NET Core, Node.js, PHP / Laravel, Python / FastAPI |
+| **Frontend** | TypeScript, JavaScript, React, Next.js, Vue, HTML, CSS, Tailwind CSS |
+| **Data** | SQL Server, PostgreSQL, MySQL, SQLite, MongoDB, Redis |
+| **Mobile & Desktop** | Android, Kotlin, Flutter, .NET MAUI, WPF, WinForms |
+| **Infrastructure** | Git, GitHub, Docker, Nginx, Azure |
+| **Automation & AI** | n8n, REST API, Webhooks, Telegram Bots, AI integrations |
+| **Additional** | WordPress, WooCommerce (when appropriate) |
 
-<br>
+> These are capabilities and tools relevant to our work, not a claim that every technology is used in every project.
 
-### Learn · Build · Automate · Grow
+</details>
 
-`Custom Software` · `Web Applications` · `Automation` · `Practical AI`
+## Collaborate & Connect
 
-</div>
+We welcome conversations about **custom software development, product engineering, technical collaboration, documentation, developer tooling, and project contributions**. To report bugs or propose changes to a published project, open an issue or pull request in its respective repository.
+
+For business inquiries, visit **[novinstack.com](https://novinstack.com)**. For sensitive security vulnerabilities, please do **not** create a public issue; first contact us via the [website contact page](https://novinstack.com/contact).
+
+---
+
+<p align="center"><img src="./assets/footer.svg" width="100%" alt="NovinStack — Engineering ideas into reality" /></p>
+
+<p align="center"><strong>From Knowledge to Product</strong><br><sub>NovinStack · Software Engineering · Applied AI · Automation · Digital Products</sub></p>
