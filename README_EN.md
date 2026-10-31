@@ -2,6 +2,8 @@
 
 <p align="center"><strong>NovinStack Technology Group</strong><br>From Knowledge to Product · از یادگیری تا ساخت محصول</p>
 
+<p align="center"><img src="./assets/novinstack-logo-transparent.png" width="90" alt="NovinStack official teal and gold emblem" /></p>
+
 <p align="center"><img src="./assets/hero.svg" width="100%" alt="NovinStack Technology Group — software engineering, applied AI, automation, and digital products" /></p>
 
 <p align="center">
@@ -28,13 +30,15 @@ We are known as **NovinStack** (also written **Novin Stack**) and in Persian as 
 
 **Our philosophy:** *Structured Prestige* — disciplined engineering, purposeful simplicity, and lasting quality.
 
-## Ask NovinStack — Your Questions, Answered
+## Meet Tisa — Your NovinStack AI Assistant
 
-Exploring a software project, looking into applied AI or automation, or considering a collaboration? **The NovinStack Assistant** helps you discover our areas of expertise, approach to product development, and ways to get in touch.
+**Tisa is NovinStack’s intelligent assistant and an expression of its ideas.**
 
-<a href="https://novinstack.github.io/novinstack/"><img src="./assets/assistant-preview-en.png" width="100%" alt="NovinStack Assistant — ask about software engineering, AI, automation and collaboration" /></a>
+Ask Tisa about our software engineering services, applied AI, automation, technologies, public projects, and ways to collaborate. Tisa supports Persian and English and can direct you to the NovinStack team when a question needs a project-specific answer.
 
-**[→ Chat with the NovinStack Assistant](https://novinstack.github.io/novinstack/)**
+<a href="https://novinstack.github.io/novinstack/"><img src="./assets/tisa-banner-en.png" width="100%" alt="Meet Tisa, NovinStack’s intelligent assistant — explore services, technologies and collaboration" /></a>
+
+**[Start a conversation with Tisa →](https://novinstack.github.io/novinstack/)** · [Contact NovinStack](https://novinstack.com/contact)
 
 ## Our Engineering Mindset
 

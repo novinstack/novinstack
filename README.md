@@ -2,6 +2,8 @@
 
 <p dir="rtl" align="right"><strong>گروه نرم‌افزاری و فناوری نوین‌استک</strong><br>از یادگیری تا ساخت محصول · From Knowledge to Product</p>
 
+<p align="center"><img src="./assets/novinstack-logo-transparent.png" width="90" alt="NovinStack official teal and gold emblem" /></p>
+
 <p align="center">
   <img src="./assets/hero.svg" width="100%" alt="NovinStack | نوین‌استک — مهندسی نرم‌افزار، هوش مصنوعی کاربردی، اتوماسیون و محصولات دیجیتال" />
 </p>
@@ -33,13 +35,15 @@
 
 <p><strong>فلسفه طراحی و توسعه:</strong> <em>Structured Prestige</em> — سادگی هدفمند، نظم مهندسی و کیفیت ماندگار.</p>
 
-<h2>با نوین‌استک گفتگو کنید</h2>
+<h2>با تیسا گفتگو کنید</h2>
 
-<p>درباره خدمات نرم‌افزاری، هوش مصنوعی، اتوماسیون، مسیر توسعه محصول یا همکاری با نوین‌استک سؤال دارید؟ <strong>دستیار نوین‌استک</strong> برای آشنایی بهتر با حوزه‌های فعالیت ما و پیدا کردن مسیر مناسب، همراه شماست.</p>
+<p><strong>تیسا، دستیار هوشمند و مجری اندیشه‌های نوین‌استک.</strong></p>
 
-<p><a href="https://novinstack.github.io/novinstack/"><img src="./assets/assistant-preview-fa.png" width="100%" alt="دستیار هوشمند نوین‌استک؛ گفتگو درباره خدمات مهندسی نرم‌افزار، هوش مصنوعی، اتوماسیون و همکاری" /></a></p>
+<p>برای آشنایی با خدمات مهندسی نرم‌افزار، هوش مصنوعی کاربردی، اتوماسیون، فناوری‌ها، محصولات عمومی و مسیر همکاری، سؤال خود را مستقیماً از تیسا بپرسید. تیسا به فارسی و انگلیسی پاسخ می‌دهد و برای موضوعات نیازمند بررسی تخصصی، شما را به مسیر ارتباط با تیم نوین‌استک راهنمایی می‌کند.</p>
 
-<p><strong><a href="https://novinstack.github.io/novinstack/">← گفتگو با دستیار نوین‌استک</a></strong></p>
+<p align="center"><a href="https://novinstack.github.io/novinstack/"><img src="./assets/tisa-banner-fa.png" width="100%" alt="تیسا، دستیار هوشمند و مجری اندیشه‌های نوین‌استک؛ برای گفتگو درباره خدمات و فناوری‌ها وارد شوید" /></a></p>
+
+<p><strong><a href="https://novinstack.github.io/novinstack/">← شروع گفتگو با تیسا</a></strong> &nbsp;·&nbsp; <a href="https://novinstack.com/contact">ارتباط مستقیم با تیم نوین‌استک</a></p>
 
 <h2>از ایده تا محصول؛ منطق مهندسی ما</h2>
 

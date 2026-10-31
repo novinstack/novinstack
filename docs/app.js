@@ -25,15 +25,15 @@
 
   const i18n = {
     fa: {
-      eyebrow: 'دستیار دیجیتال نوین‌استک', heroTitle: 'سلام، من <em>تیسا</em> هستم.',
-      heroText: 'از خدمات و فناوری‌ها تا شروع همکاری، اینجا می‌توانید درباره نوین‌استک سؤال کنید.',
+      eyebrow: 'دستیار هوشمند نوین‌استک', heroTitle: 'سلام، من <em>تیسا</em> هستم.',
+      heroText: 'دستیار هوشمند و مجری اندیشه‌های نوین‌استک؛ برای شناخت خدمات، فناوری‌ها و مسیر همکاری کنار شماست.',
       topicsLabel: 'موضوع گفتگوی شما', topicServices: 'خدمات نرم‌افزاری', topicAI: 'هوش مصنوعی و اتوماسیون',
       topicCollab: 'همکاری و سفارش پروژه', topicLearning: 'آموزش و توسعه‌دهندگان',
       topicProducts: 'محصولات و پروژه‌ها', topicTech: 'فناوری‌ها و معماری',
-      tagline: 'از یادگیری تا ساخت محصول', assistantName: 'تیسا',
+      tagline: 'از یادگیری تا ساخت محصول', visitSite: 'آشنایی با نوین‌استک', assistantName: 'تیسا',
       basicMode: 'راهنمای اطلاعات نوین‌استک', aiMode: 'دستیار هوشمند نوین‌استک',
       welcomeKicker: 'TISA · NOVINSTACK', welcomeTitle: 'سلام! چه سؤالی درباره نوین‌استک دارید؟',
-      welcomeDesc: 'من تیسا هستم. می‌توانم درباره خدمات، فناوری‌ها، محصولات و مسیر همکاری با نوین‌استک راهنمایی‌تان کنم.',
+      welcomeDesc: 'تیسا، دستیار هوشمند و مجری اندیشه‌های نوین‌استک؛ برای پاسخ به پرسش‌های شما درباره خدمات، فناوری‌ها و همکاری.',
       suggestionsTitle: 'از این سؤال‌ها شروع کنید', moreQuestions: 'سؤال‌های بیشتر', lessQuestions: 'نمایش سؤال‌های کمتر',
       inputLabel: 'پیام خود را بنویسید', placeholder: 'سؤال خود را بنویسید…',
       noticeBasic: 'پاسخ‌ها بر اساس راهنمای اطلاعات عمومی نوین‌استک تهیه می‌شوند.',
@@ -72,15 +72,15 @@
       }
     },
     en: {
-      eyebrow: 'NOVINSTACK DIGITAL ASSISTANT', heroTitle: 'Hi, I’m <em>Tisa.</em>',
-      heroText: 'Explore NovinStack’s services, technologies, products, and ways to work with us.',
+      eyebrow: 'NOVINSTACK AI ASSISTANT', heroTitle: 'Hi, I’m <em>Tisa.</em>',
+      heroText: 'NovinStack’s intelligent assistant, bringing our ideas to life through clear answers and useful guidance.',
       topicsLabel: 'EXPLORE A TOPIC', topicServices: 'Software engineering', topicAI: 'Applied AI & automation',
       topicCollab: 'Projects & collaboration', topicLearning: 'Learning & developers',
       topicProducts: 'Products & projects', topicTech: 'Technologies & architecture',
-      tagline: 'From Knowledge to Product', assistantName: 'Tisa',
+      tagline: 'From Knowledge to Product', visitSite: 'Explore NovinStack', assistantName: 'Tisa',
       basicMode: 'NovinStack knowledge guide', aiMode: 'NovinStack AI assistant',
       welcomeKicker: 'TISA · NOVINSTACK', welcomeTitle: 'Hello! What would you like to know?',
-      welcomeDesc: 'I’m Tisa. Ask me about NovinStack’s services, technologies, public projects, and how we can collaborate.',
+      welcomeDesc: 'I’m Tisa, NovinStack’s intelligent assistant. Ask about our services, technologies, products, and collaboration.',
       suggestionsTitle: 'START WITH A QUESTION', moreQuestions: 'More questions', lessQuestions: 'Show fewer questions',
       inputLabel: 'Write your message', placeholder: 'Ask Tisa about NovinStack…',
       noticeBasic: 'Answers are based on NovinStack’s public knowledge guide.',
@@ -193,8 +193,9 @@
     });
     input.placeholder = t.placeholder;
     input.setAttribute('aria-label', t.inputLabel);
-    el('lang-label').textContent = lang === 'fa' ? 'EN' : 'فا';
-    el('lang-switch').setAttribute('aria-label', lang === 'fa' ? 'Switch to English' : 'تغییر زبان به فارسی');
+    for (const option of document.querySelectorAll('.language-option')) {
+      option.setAttribute('aria-pressed', String(option.dataset.lang === lang));
+    }
     el('reset-button').setAttribute('aria-label', t.reset);
     el('reset-button').title = t.reset;
     sendButton.setAttribute('aria-label', t.send);
@@ -388,7 +389,9 @@
       ask(input.value);
     }
   });
-  el('lang-switch').addEventListener('click', () => setLanguage(lang === 'fa' ? 'en' : 'fa'));
+  document.querySelectorAll('.language-option').forEach(button => {
+    button.addEventListener('click', () => setLanguage(button.dataset.lang));
+  });
   el('reset-button').addEventListener('click', reset);
   moreButton.addEventListener('click', () => {expanded = !expanded; renderPrompts();});
   document.querySelectorAll('[data-topic]').forEach(button => {
