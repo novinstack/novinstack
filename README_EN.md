@@ -24,23 +24,17 @@
 
 We work from understanding the problem and selecting an appropriate architecture through building, delivering, and improving reliable software. Our goal is to turn knowledge and ideas into useful, maintainable products—not simply to assemble technology stacks.
 
-**Brand name:** **NovinStack** is our official English spelling; **Novin Stack** is a search-friendly spaced variant. In Persian, the same brand is written **نوین‌استک** (official) or **نوین استک** (without the half-space).
+We are known as **NovinStack** (also written **Novin Stack**) and in Persian as **نوین‌استک** (نوین استک).
 
 **Our philosophy:** *Structured Prestige* — disciplined engineering, purposeful simplicity, and lasting quality.
 
-## NovinStack Build Console — Code You Can Actually Run
+## Ask NovinStack — Your Questions, Answered
 
-The previous TypeScript object was a brand statement, not executable documentation. We replaced it with a **real browser-based interactive console**. Try `push`, `pop`, `peek`, and `stack` against a working JavaScript LIFO data structure. Explore an interactive visualization of our engineering lifecycle, too.
+Exploring a software project, looking into applied AI or automation, or considering a collaboration? **The NovinStack Assistant** helps you discover our areas of expertise, approach to product development, and ways to get in touch.
 
-<a href="https://novinstack.github.io/novinstack/"><img src="./assets/console-preview.svg" width="100%" alt="NovinStack Build Console preview showing real browser-powered stack commands" /></a>
+<a href="https://novinstack.github.io/novinstack/"><img src="./assets/assistant-preview-en.png" width="100%" alt="NovinStack Assistant — ask about software engineering, AI, automation and collaboration" /></a>
 
-**[→ Launch the interactive console](https://novinstack.github.io/novinstack/)** · [View source](./docs/index.html)
-
-<details>
-  <summary><strong>What can I run?</strong></summary>
-  <p>Run <code>push "Idea"</code>, then <code>push "Product"</code>, and inspect the stack with <code>peek</code> or <code>pop</code>. Type <code>help</code> for all commands.</p>
-  <p>The <code>Learn → Analyze → Architect → Build → Ship → Improve</code> sequence is an educational process simulation, not a real software build/deployment. GitHub READMEs cannot run JavaScript; launch the linked browser application to interact.</p>
-</details>
+**[→ Chat with the NovinStack Assistant](https://novinstack.github.io/novinstack/)**
 
 ## Our Engineering Mindset
 

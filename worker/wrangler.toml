@@ -1,0 +1,11 @@
+name = "novinstack-assistant-api"
+main = "src/index.js"
+compatibility_date = "2025-06-01"
+
+# Cloudflare Workers AI native binding. Free plan: 10,000 neurons/day.
+[ai]
+binding = "AI"
+
+[vars]
+ALLOWED_ORIGIN = "https://novinstack.github.io"
+AI_MODEL = "@cf/meta/llama-3.1-8b-instruct-fp8-fast"

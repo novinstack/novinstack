@@ -29,22 +29,17 @@
 
 <p>ما از شناخت مسئله و طراحی معماری مناسب تا توسعه، استقرار و بهبود محصول پیش می‌رویم. هدف، تبدیل دانش و ایده به راهکارهای واقعی، قابل نگهداری و توسعه‌پذیر است؛ نه صرفاً ساخت چند صفحه یا فهرست‌کردن فناوری‌ها.</p>
 
-<p><strong>نگارش رسمی برند:</strong> <strong>نوین‌استک</strong> و <strong>NovinStack</strong>. شکل‌های جست‌وجوی <strong>نوین استک</strong> و <strong>Novin Stack</strong> نیز به همین برند اشاره دارند.</p>
+<p>این مجموعه با نام <strong>نوین‌استک</strong> (نوین استک) و در منابع انگلیسی با نام <strong>NovinStack</strong> (Novin Stack) شناخته می‌شود.</p>
 
 <p><strong>فلسفه طراحی و توسعه:</strong> <em>Structured Prestige</em> — سادگی هدفمند، نظم مهندسی و کیفیت ماندگار.</p>
 
-<h2>NovinStack Build Console — یک تجربه برنامه‌نویسی واقعی</h2>
+<h2>با نوین‌استک گفتگو کنید</h2>
 
-<p>به‌جای نمایش یک قطعه TypeScript که در README اجرا نمی‌شود، یک <strong>کنسول تعاملی</strong> ساخته‌ایم: دستورهای <code>push</code>، <code>pop</code>، <code>peek</code> و <code>stack</code> واقعاً با JavaScript روی یک پشته اجرا می‌شوند. مسیر توسعه محصول نیز به‌صورت شبیه‌سازی قابل بررسی است.</p>
+<p>درباره خدمات نرم‌افزاری، هوش مصنوعی، اتوماسیون، مسیر توسعه محصول یا همکاری با نوین‌استک سؤال دارید؟ <strong>دستیار نوین‌استک</strong> برای آشنایی بهتر با حوزه‌های فعالیت ما و پیدا کردن مسیر مناسب، همراه شماست.</p>
 
-<p><a href="https://novinstack.github.io/novinstack/"><img src="./assets/console-preview.svg" width="100%" alt="پیش‌نمایش NovinStack Build Console؛ اجرای واقعی دستورات پشته در مرورگر با هویت سبزآبی و طلایی نوین‌استک" /></a></p>
+<p><a href="https://novinstack.github.io/novinstack/"><img src="./assets/assistant-preview-fa.png" width="100%" alt="دستیار هوشمند نوین‌استک؛ گفتگو درباره خدمات مهندسی نرم‌افزار، هوش مصنوعی، اتوماسیون و همکاری" /></a></p>
 
-<p><strong><a href="https://novinstack.github.io/novinstack/">← اجرای کنسول تعاملی NovinStack</a></strong> &nbsp;·&nbsp; <a href="./docs/index.html">مشاهده سورس</a></p>
-
-<details dir="rtl"><summary dir="rtl"><strong>این کنسول چه دستورهایی اجرا می‌کند؟</strong></summary>
-<p>برای آزمایش ساختار داده واقعی پشته، در کنسول دستورهای <code>push "Idea"</code>، سپس <code>push "Product"</code>، و در ادامه <code>peek</code> یا <code>pop</code> را وارد کنید. برای راهنمای کامل دستور <code>help</code> را اجرا کنید.</p>
-<p>نمایش مراحل <code>Learn → Analyze → Architect → Build → Ship → Improve</code> شبیه‌سازی آموزشی است و به معنای اجرای واقعی Build یا Deploy نیست. برای اجرای JavaScript باید لینک بالا را در مرورگر باز کنید؛ کدهای README توسط GitHub اجرا نمی‌شوند.</p>
-</details>
+<p><strong><a href="https://novinstack.github.io/novinstack/">← گفتگو با دستیار نوین‌استک</a></strong></p>
 
 <h2>از ایده تا محصول؛ منطق مهندسی ما</h2>
 

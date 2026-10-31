@@ -1,213 +1,91 @@
 (() => {
   'use strict';
-  const $ = (id) => document.getElementById(id);
-  const root = document.documentElement;
-  let lang = 'fa';
-  let stack = [];
-  let running = false;
-  let activeStep = 0;
+  const cfg = window.NOVINSTACK_CONFIG || {};
+  const apiBase = typeof cfg.apiBaseUrl === 'string' ? cfg.apiBaseUrl.trim().replace(/\/+$/, '') : '';
+  const siteKey = typeof cfg.turnstileSiteKey === 'string' ? cfg.turnstileSiteKey.trim() : '';
+  const aiConfigured = /^https:\/\//i.test(apiBase) && Boolean(siteKey);
+  const el = (id) => document.getElementById(id);
+  const chatArea = el('chat-area'), input = el('message-input'), form = el('chat-form'), messages = el('messages');
+  const sendButton = el('send-button'), welcome = el('welcome'), typing = el('typing');
+  let lang = 'fa', busy = false, history = [], captchaToken = '', widgetId = null, requestId = 0;
 
-  const messages = {
+  const copy = {
     fa: {
-      eyebrow: 'آزمایشگاه تعاملی مهندسی نرم‌افزار', hero1: 'دانش را وارد کن.', hero2: 'محصول را بساز.',
-      intro: 'این یک ویترین تصویری نیست؛ دستورهای پشته واقعاً در مرورگر اجرا می‌شوند. چرخه مهندسی محصول هم به‌صورت شبیه‌سازی تعاملی در دسترس است.',
-      runtime: 'اجرای محلی', execute: 'اجرا', terminalNote: 'دستورها در مرورگر خودتان اجرا می‌شوند؛ هیچ داده‌ای به سرور ارسال نمی‌شود.',
-      live: 'زنده', stackTitle: 'پشته زنده', stackDesc: 'آخرین ورودی، اولین خروجی. با push و pop مفهوم نام Stack را عملاً تجربه کن.',
-      empty: 'پشته خالی است — push را امتحان کن', stackValueLabel: 'مقدار جدید', depth: 'عمق پشته', top: 'بالای پشته',
-      signature: 'از یادگیری تا ساخت محصول', pipelineTitle: 'مسیر ساخت محصول',
-      pipelineDesc: 'این بخش یک شبیه‌سازی از فرایند است، نه اجرای واقعی Build یا Deploy.', simulate: 'نمایش فرایند ↗',
-      footerName: 'نوین‌استک / نوین استک',
-      boot: 'NovinStack Build Console آماده است. برای شروع help را اجرا کن.',
-      help: 'دستورها: help · about · mission · push <value> · pop · peek · stack · size · flow · run · clear · reset · lang fa|en · theme dark|light',
-      about: 'NovinStack / نوین‌استک — گروه نرم‌افزاری و فناوری. نام جایگزین: نوین استک / Novin Stack.',
-      mission: 'From Knowledge to Product — از یادگیری تا ساخت محصول.',
-      usagePush: 'نمونه: push "Software"',
-      pushed: (v) => `مقدار «${v}» وارد پشته شد.`,
-      popped: (v) => `مقدار «${v}» از بالای پشته خارج شد.`,
-      peek: (v) => `بالای پشته: ${v}`,
-      size: (n) => `تعداد عناصر پشته: ${n}`,
-      emptyStack: 'پشته خالی است.',
-      fullStack: 'ظرفیت نمایش پشته ۸ عنصر است؛ برای ادامه pop را اجرا کن.',
-      all: (items) => `پشته (از پایین به بالا): ${items.join(' → ')}`,
-      flow: 'LEARN → ANALYZE → ARCHITECT → BUILD → SHIP → IMPROVE',
-      reset: 'پشته بازنشانی شد.',
-      unknown: (x) => `دستور ناشناخته: ${x}. برای راهنما help را اجرا کن.`,
-      language: 'زبان فارسی فعال شد.', theme: 'حالت نمایش تغییر کرد.',
-      running: 'شبیه‌سازی مسیر ساخت محصول آغاز شد (بدون ساخت یا استقرار واقعی).',
-      finished: 'شبیه‌سازی کامل شد. این اجرا صرفاً نمایش فرایند بود.',
-      busy: 'شبیه‌سازی در حال اجراست.',
+      eyebrow: 'گفتگو، از اولین سؤال', heroTitle: 'فناوری را از<br><em>یک گفتگو</em> شروع کنید.',
+      heroText: 'از انتخاب فناوری تا طراحی یک محصول دیجیتال، پاسخ پرسش‌های خود درباره نوین‌استک را اینجا پیدا کنید.',
+      topicsLabel: 'می‌توانید درباره این موضوعات بپرسید', topicServices: 'خدمات و راهکارها', topicAI: 'هوش مصنوعی و اتوماسیون',
+      topicCollab: 'همکاری و سفارش پروژه', topicLearning: 'آموزش و توسعه‌دهندگان', tagline: 'از یادگیری تا ساخت محصول',
+      assistantName: 'دستیار نوین‌استک', basicMode: 'راهنمای اطلاعات نوین‌استک', aiMode: 'پاسخ‌گویی هوشمند',
+      welcomeKicker: 'NOVINSTACK · DIGITAL ASSISTANT', welcomeTitle: 'سلام، چطور می‌تونم کمکتون کنم؟',
+      welcomeDesc: 'درباره نوین‌استک، خدمات ما، مسیر توسعه محصول و فرصت‌های همکاری سؤال کنید.',
+      inputLabel: 'پرسش خود را بنویسید', placeholder: 'سؤال خود را درباره نوین‌استک بنویسید…',
+      noticeBasic: 'راهنمای اولیه فعال است. پاسخ‌های آزاد هوشمند پس از اتصال سرویس AI در دسترس خواهند بود.',
+      noticeAI: 'پاسخ‌ها بر اساس اطلاعات رسمی نوین‌استک تهیه می‌شوند؛ برای جزئیات قطعی با تیم ما تماس بگیرید.',
+      noticeCaptcha: 'برای ارسال پیام، ابتدا بررسی امنیتی را تکمیل کنید.',
+      privacy: 'لطفاً اطلاعات محرمانه یا شخصی ارسال نکنید.', privacyAI: 'پیام‌ها برای تولید پاسخ به سرویس هوش مصنوعی ارسال می‌شوند؛ اطلاعات محرمانه نفرستید.', officialSite: 'وب‌سایت رسمی',
+      reset: 'شروع گفتگوی جدید', send: 'ارسال پیام', copy: 'کپی پاسخ', copied: 'کپی شد',
+      you: 'شما', assistant: 'نوین‌استک', error: 'در حال حاضر اتصال به دستیار هوشمند برقرار نیست. لطفاً کمی بعد دوباره تلاش کنید یا از طریق وب‌سایت رسمی با ما در ارتباط باشید.',
+      tooLong: 'متن پیام باید حداکثر ۱۲۰۰ نویسه باشد.',
+      quota: 'ظرفیت رایگان پاسخ‌گویی هوشمند امروز تکمیل شده است. لطفاً فردا دوباره مراجعه کنید یا از طریق وب‌سایت رسمی با ما در ارتباط باشید.',
+      prompts: ['نوین‌استک چه خدماتی ارائه می‌دهد؟','چطور برای توسعه نرم‌افزار همکاری کنیم؟','در حوزه هوش مصنوعی چه فعالیت‌هایی دارید؟','از کجا پروژه‌های منتشرشده را ببینم؟'],
+      topics: {services:'چه خدمات نرم‌افزاری ارائه می‌دهید؟',ai:'در حوزه هوش مصنوعی و اتوماسیون چه خدماتی دارید؟',collaboration:'برای شروع همکاری یا سفارش پروژه چه کار کنم؟',learning:'برای آموزش و توسعه‌دهندگان چه فعالیت‌هایی دارید؟'}
     },
     en: {
-      eyebrow: 'Interactive software engineering playground', hero1: 'Knowledge is input.', hero2: 'Products are output.',
-      intro: 'Not just a static snippet. Stack commands execute locally in your browser, while the product lifecycle can be explored as an interactive simulation.',
-      runtime: 'LOCAL RUNTIME', execute: 'RUN', terminalNote: 'Commands run in your browser; no command data is sent to a server.',
-      live: 'LIVE', stackTitle: 'Live stack', stackDesc: 'Last In, First Out. Try push and pop to explore the data structure behind our name.',
-      empty: 'Stack is empty — try push', stackValueLabel: 'New value', depth: 'Stack depth', top: 'Top item',
-      signature: 'From Knowledge to Product', pipelineTitle: 'Product lifecycle',
-      pipelineDesc: 'This is a process visualization—not a real software build or deployment.', simulate: 'RUN SIMULATION ↗',
-      footerName: 'نوین‌استک / نوین استک',
-      boot: 'NovinStack Build Console ready. Type help to get started.',
-      help: 'Commands: help · about · mission · push <value> · pop · peek · stack · size · flow · run · clear · reset · lang fa|en · theme dark|light',
-      about: 'NovinStack / Novin Stack — software engineering and technology group. Persian: نوین‌استک / نوین استک.',
-      mission: 'From Knowledge to Product.',
-      usagePush: 'Example: push "Software"',
-      pushed: (v) => `Pushed "${v}" onto the stack.`,
-      popped: (v) => `Popped "${v}" from the stack.`,
-      peek: (v) => `Top of stack: ${v}`,
-      size: (n) => `Stack size: ${n}`,
-      emptyStack: 'Stack is empty.',
-      fullStack: 'The visual stack holds up to 8 items. Try pop.',
-      all: (items) => `Stack (bottom to top): ${items.join(' → ')}`,
-      flow: 'LEARN → ANALYZE → ARCHITECT → BUILD → SHIP → IMPROVE',
-      reset: 'Stack reset.',
-      unknown: (x) => `Unknown command: ${x}. Type help for options.`,
-      language: 'English enabled.', theme: 'Theme changed.',
-      running: 'Product lifecycle simulation started (no actual build or deployment).',
-      finished: 'Simulation complete. This was a process visualization only.',
-      busy: 'Simulation already running.',
+      eyebrow: 'A conversation is a starting point', heroTitle: 'Great technology<br>starts with <em>a question.</em>',
+      heroText: 'From choosing the right technology to shaping a digital product, explore what NovinStack can do for you.',
+      topicsLabel: 'WHAT WOULD YOU LIKE TO EXPLORE?', topicServices: 'Services & solutions', topicAI: 'Applied AI & automation',
+      topicCollab: 'Projects & collaboration', topicLearning: 'Learning & developers', tagline: 'From Knowledge to Product',
+      assistantName: 'NovinStack Assistant', basicMode: 'NovinStack knowledge guide', aiMode: 'AI-powered responses',
+      welcomeKicker: 'NOVINSTACK · DIGITAL ASSISTANT', welcomeTitle: 'Hello! How can we help?',
+      welcomeDesc: 'Ask about NovinStack, our expertise, the product journey, or working together.',
+      inputLabel: 'Type your question', placeholder: 'Ask a question about NovinStack…',
+      noticeBasic: 'The basic knowledge guide is active. Open-ended AI answers require connecting the AI service.',
+      noticeAI: 'Answers are grounded in NovinStack information. Please confirm project-specific details with our team.',
+      noticeCaptcha: 'Complete the security check before sending a message.',
+      privacy: 'Please do not share personal or confidential information.', privacyAI: 'Messages are processed by an AI provider; do not share sensitive information.', officialSite: 'Official website',
+      reset: 'Start a new conversation', send: 'Send message', copy: 'Copy answer', copied: 'Copied',
+      you: 'You', assistant: 'NovinStack', error: 'The AI assistant is temporarily unavailable. Please try again later or reach us through the official website.',
+      tooLong: 'Messages must be 1,200 characters or fewer.',
+      quota: 'Today’s free AI response capacity has been reached. Please try again tomorrow or contact us through the official website.',
+      prompts: ['What does NovinStack do?','How can we start a software project?','What do you offer in AI and automation?','Where can I find your public projects?'],
+      topics: {services:'What software services do you offer?',ai:'How can NovinStack help with AI and automation?',collaboration:'How can we start a project with NovinStack?',learning:'What do you offer for learners and developers?'}
     }
   };
-
-  const stages = [
-    {en: 'Learning', fa: 'یادگیری', detailEn:'Explore knowledge, research, and the problem space.', detailFa:'یادگیری، پژوهش و شناخت زمینه مسئله.'},
-    {en: 'Analysis', fa: 'تحلیل', detailEn:'Define requirements, boundaries, and success criteria.', detailFa:'تعیین نیازمندی‌ها، محدوده و معیارهای موفقیت.'},
-    {en: 'Architecture', fa: 'معماری', detailEn:'Design coherent systems and choose the right trade-offs.', detailFa:'طراحی سیستم منسجم و انتخاب مصالحه‌های فنی مناسب.'},
-    {en: 'Development', fa: 'توسعه', detailEn:'Implement tested and maintainable software increments.', detailFa:'پیاده‌سازی مرحله‌ای با تأکید بر آزمون و نگهداشت‌پذیری.'},
-    {en: 'Delivery', fa: 'عرضه', detailEn:'Prepare a release and deliver usable value.', detailFa:'آماده‌سازی انتشار و ارائه ارزش قابل استفاده.'},
-    {en: 'Iteration', fa: 'بهبود', detailEn:'Measure feedback, learn, and refine the product.', detailFa:'دریافت بازخورد، یادگیری و بهبود مستمر محصول.'}
+  const faQ = [
+    {terms:['چیست','کیست','درباره','معرفی','نوین استک','نوین‌استک','novinstack','about','who are','what is'], text:{fa:'نوین‌استک (NovinStack) یک گروه نرم‌افزاری و فناوری است. تمرکز ما بر مهندسی نرم‌افزار، سامانه‌های سازمانی، هوش مصنوعی کاربردی، اتوماسیون و توسعه محصولات دیجیتال است. شعار ما «از یادگیری تا ساخت محصول» است.',en:'NovinStack is a software engineering and technology group focused on software systems, enterprise applications, applied AI, automation, and digital products. Our guiding idea is “From Knowledge to Product”.'}, url:'https://novinstack.com'},
+    {terms:['خدمات','طراحی سایت','نرم افزار','نرم‌افزار','وب','سایت','اپلیکیشن','سامانه','software','services','website','web app','mobile','desktop','backend','frontend','api'], text:{fa:'در نوین‌استک روی توسعه نرم‌افزار اختصاصی، وب‌سایت و وب‌اپلیکیشن، سامانه‌های مدیریتی و سازمانی، API و یکپارچه‌سازی سرویس‌ها، اپلیکیشن موبایل و نرم‌افزار دسکتاپ فعالیت می‌کنیم. انتخاب فناوری و دامنه کار بر اساس نیاز هر پروژه انجام می‌شود.',en:'Our areas include custom software, websites and web applications, enterprise systems, APIs and integrations, mobile apps, and desktop applications. Technology choices and project scope depend on the problem being solved.'},url:'https://novinstack.com'},
+    {terms:['هوش مصنوعی','عامل','ایجنت','چت بات','چت‌بات','اتوماسیون','ربات','ai','agent','automation','chatbot','n8n','rag','workflow'],text:{fa:'حوزه هوش مصنوعی کاربردی و اتوماسیون در نوین‌استک شامل طراحی عامل‌های هوشمند، یکپارچه‌سازی قابلیت‌های AI، جست‌وجوی معنایی و RAG، طراحی گردش‌کار، ربات‌ها و اتصال سرویس‌ها است. هر راهکار با توجه به مسئله و امکان‌سنجی فنی انتخاب می‌شود.',en:'NovinStack works with applied AI, AI agents, AI integrations, semantic search and RAG, workflow automation, bots, and connected services. We assess the actual business problem before recommending an approach.'},url:'https://novinstack.com'},
+    {terms:['همکاری','سفارش','تماس','مشاوره','قیمت','هزینه','بودجه','پروپوزال','شروع پروژه','collaboration','contact','pricing','cost','quote','project','consult'],text:{fa:'برای شروع همکاری، بهتر است هدف پروژه، کاربران اصلی، قابلیت‌های موردنیاز، زمان‌بندی و محدودیت‌های احتمالی را مشخص کنید. سپس از طریق وب‌سایت رسمی نوین‌استک برای بررسی و هماهنگی ارتباط بگیرید. قیمت یا زمان قطعی بدون تحلیل نیازمندی‌ها اعلام نمی‌شود.',en:'To start a project, outline your goals, users, key requirements, timeline, and constraints. Then contact NovinStack through the official website. Accurate estimates require reviewing the scope first.'},url:'https://novinstack.com/contact'},
+    {terms:['آموزش','یادگیری','آکادمی','استارت','توسعه دهنده','برنامه نویس','learn','education','academy','start','developer','training'],text:{fa:'آموزش فناوری و توسعه مهارت، بخشی از مسیر نوین‌استک است. مسیر Start بر آغاز یادگیری و رشد مهارت‌ها تمرکز دارد و Dev به موضوعات تخصصی مهندسی نرم‌افزار و ابزارهای توسعه‌دهندگان نزدیک‌تر است. برای محتوای منتشرشده و وضعیت فعلی برنامه‌ها، کانال‌های رسمی را بررسی کنید.',en:'Technology education and developer learning are part of NovinStack’s direction. Start focuses on learning foundations, while Dev addresses more specialized engineering topics. Check official channels for currently available material.'},url:'https://novinstack.com'},
+    {terms:['پروژه ها','پروژه‌ها','گیت هاب','گیت‌هاب','مخزن','ریپازیتوری','کتابخانه','npm','react datepicker','github','repository','repositories','open source','projects','portfolio'],text:{fa:'پروژه‌ها و ابزارهای عمومی نوین‌استک در صفحه مخازن GitHub منتشر می‌شوند. می‌توانید وضعیت انتشار، مستندات و مجوز هر پروژه را در مخزن خودش بررسی کنید. همه ایده‌ها یا حوزه‌های فعالیت لزوماً محصول منتشرشده نیستند.',en:'You can explore public NovinStack projects in our GitHub repositories. Each repository contains its own release status, documentation, and license. Not every research idea or focus area is a released product.'},url:'https://github.com/novinstack?tab=repositories'},
+    {terms:['تکنولوژی','فناوری','زبان برنامه','تک استک','فریم ورک','technology','tech stack','framework','react','next.js','python','dotnet','.net','flutter','typescript','database'],text:{fa:'فناوری‌های مرتبط با حوزه‌های کاری نوین‌استک شامل .NET، Python، Node.js، React، Next.js، TypeScript، پایگاه‌های داده رابطه‌ای، Flutter و ابزارهای زیرساخت و اتوماسیون هستند. انتخاب ابزار متناسب با نیاز پروژه است و به معنی استفاده از همه آن‌ها در هر محصول نیست.',en:'Our relevant technologies include .NET, Python, Node.js, React, Next.js, TypeScript, relational databases, Flutter, and infrastructure and automation tooling. The stack is selected per project; not every tool is used everywhere.'},url:'https://github.com/novinstack'},
+    {terms:['شعار','ماموریت','مأموریت','چشم انداز','چشم‌انداز','mission','vision','slogan','tagline','knowledge','product'],text:{fa:'شعار نوین‌استک «از یادگیری تا ساخت محصول» است. مأموریت ما تبدیل دانش، ایده و فناوری به راهکارها و محصولات واقعی، کاربردی و قابل توسعه است؛ با تکیه بر تحلیل، معماری مناسب و بهبود مستمر.',en:'Our tagline is “From Knowledge to Product.” NovinStack’s mission is to turn knowledge, ideas, and technology into practical, maintainable solutions and products through thoughtful analysis, engineering, and continuous improvement.'},url:'https://novinstack.com'},
+    {terms:['امنیت','آسیب پذیری','باگ امنیتی','security','vulnerability','report bug'],text:{fa:'برای گزارش آسیب‌پذیری امنیتی، لطفاً جزئیات حساس را در Issue عمومی منتشر نکنید. از طریق صفحه تماس رسمی با تیم نوین‌استک ارتباط بگیرید.',en:'For security reports, please avoid posting sensitive vulnerability details in public issues. Contact NovinStack privately through the official contact page.'},url:'https://novinstack.com/contact'}
   ];
-
-  const tr = (key, ...args) => {
-    const v = messages[lang][key];
-    return typeof v === 'function' ? v(...args) : v;
-  };
-  function log(text, kind = 'info') {
-    const el = document.createElement('div');
-    el.className = `log-row ${kind}`;
-    el.textContent = text;
-    el.setAttribute('dir', 'auto');
-    $('terminalOutput').appendChild(el);
-    $('terminalOutput').scrollTop = $('terminalOutput').scrollHeight;
+  function normalize(s) {return s.toLowerCase().replace(/[\u200c\u200d]/g,' ').replace(/[ي]/g,'ی').replace(/[ك]/g,'ک').replace(/[\u064b-\u065f]/g,'').replace(/\s+/g,' ').trim();}
+  function basicAnswer(question) {
+    const q = normalize(question);
+    const ranked = faQ.map((a,idx) => ({a,idx,score:a.terms.reduce((score,term)=>score+(q.includes(normalize(term)) ? Math.max(1,normalize(term).length/5) : 0),0)})).sort((a,b)=>b.score-a.score);
+    // General brand terms must not overpower specific service questions.
+    const specific = ranked.filter(x=>x.idx!==0 && x.score>0);
+    const best = specific[0] || ranked[0];
+    if(best && best.score>0) return {text:best.a.text[lang],url:best.a.url};
+    return {text:lang==='fa'?'برای پاسخ دقیق به این پرسش، به اطلاعات بیشتری نیاز است. می‌توانید درباره خدمات، هوش مصنوعی، آموزش، فناوری‌ها یا همکاری سؤال کنید؛ برای موضوعات تخصصی نیز از طریق وب‌سایت رسمی با تیم نوین‌استک در ارتباط باشید.':'I don’t have verified information to answer that precisely. You can ask about services, AI, learning, technologies, or collaboration, or contact the NovinStack team through the official website.',url:'https://novinstack.com'};
   }
-  function renderStack(){
-    const list = $('stackItems');
-    list.replaceChildren();
-    stack.forEach((value, idx) => {
-      const item = document.createElement('div');
-      item.className = 'stack-item';
-      const index = document.createElement('small');
-      index.textContent = String(idx).padStart(2,'0');
-      const label = document.createElement('span');
-      label.textContent = value;
-      item.append(index,label);
-      list.appendChild(item);
-    });
-    $('stackEmpty').hidden = stack.length > 0;
-    $('stackCount').textContent = String(stack.length);
-    $('stackTop').textContent = stack.at(-1) || '—';
-  }
-  function setStage(index){
-    activeStep = index;
-    $('stageName').textContent = ['LEARN','ANALYZE','ARCHITECT','BUILD','SHIP','IMPROVE'][index];
-    $('stageDetail').textContent = lang === 'fa' ? stages[index].detailFa : stages[index].detailEn;
-    $('stageCount').textContent = `${String(index+1).padStart(2,'0')} / 06`;
-    document.querySelectorAll('.pipeline-step').forEach((el, i) => {
-      el.classList.toggle('active', i === index);
-      el.setAttribute('aria-pressed', i === index ? 'true' : 'false');
-    });
-  }
-  function setLanguage(next){
-    lang = next === 'en' ? 'en' : 'fa';
-    root.lang = lang;
-    root.dir = lang === 'fa' ? 'rtl' : 'ltr';
-    $('langToggle').textContent = lang === 'fa' ? 'EN' : 'فا';
-    document.querySelectorAll('[data-i18n]').forEach((el) => { el.textContent = tr(el.dataset.i18n); });
-    document.querySelectorAll('[data-step-label]').forEach((el) => {
-      const index = Number(el.dataset.stepLabel);
-      el.textContent = lang === 'fa' ? stages[index].fa : stages[index].en;
-    });
-    setStage(activeStep);
-  }
-  const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
-  async function simulate(){
-    if (running) {log(tr('busy'), 'muted'); return;}
-    running = true;
-    $('pipelineButton').disabled = true;
-    document.querySelectorAll('.pipeline-step').forEach(el => el.classList.remove('completed'));
-    log(tr('running'), 'gold');
-    for(let i=0;i<stages.length;i++){
-      setStage(i);
-      log(`${String(i+1).padStart(2,'0')}/06  ${['LEARN','ANALYZE','ARCHITECT','BUILD','SHIP','IMPROVE'][i]} ✓`, 'success');
-      document.querySelector(`.pipeline-step[data-step="${i}"]`).classList.add('completed');
-      await sleep(340);
-    }
-    log(tr('finished'), 'gold');
-    running = false;
-    $('pipelineButton').disabled = false;
-  }
-  function tokenize(raw) {
-    const tokens=[];
-    const rx = /"([^"]*)"|'([^']*)'|(\S+)/g;
-    let match;
-    while((match=rx.exec(raw))!==null){tokens.push(match[1]??match[2]??match[3]);}
-    return tokens;
-  }
-  async function execute(raw){
-    const input = raw.trim();
-    if(!input) return;
-    log(input,'command');
-    const args = tokenize(input);
-    const cmd = (args[0]||'').toLowerCase();
-    switch(cmd){
-      case 'help': log(tr('help'),'muted'); break;
-      case 'about': log(tr('about'),'success'); break;
-      case 'mission': log(tr('mission'),'gold'); break;
-      case 'push': {
-        const value=args.slice(1).join(' ').trim();
-        if(!value){log(tr('usagePush'),'error'); break;}
-        if(stack.length>=8){log(tr('fullStack'),'error'); break;}
-        stack.push(value.slice(0,26)); renderStack(); log(tr('pushed',stack.at(-1)),'success'); break;
-      }
-      case 'pop': {
-        if(!stack.length){log(tr('emptyStack'),'error');break;}
-        const value=stack.pop(); renderStack();log(tr('popped',value),'success');break;
-      }
-      case 'peek': log(stack.length?tr('peek',stack.at(-1)):tr('emptyStack'),stack.length?'success':'error');break;
-      case 'stack': log(stack.length?tr('all',stack):tr('emptyStack'),'muted');break;
-      case 'size': log(tr('size',stack.length),'success');break;
-      case 'flow': log(tr('flow'),'gold');break;
-      case 'run': case 'build': await simulate();break;
-      case 'reset': stack=[];renderStack();log(tr('reset'),'success');break;
-      case 'clear': $('terminalOutput').replaceChildren();break;
-      case 'lang': {
-        if(!['fa','en'].includes(args[1])) {log('Usage: lang fa | lang en','error');break;}
-        setLanguage(args[1]);log(tr('language'),'success');break;
-      }
-      case 'theme': {
-        if(!['dark','light'].includes(args[1])){log('Usage: theme dark | theme light','error');break;}
-        document.body.classList.toggle('light',args[1]==='light');log(tr('theme'),'success');break;
-      }
-      default: log(tr('unknown',cmd),'error');
-    }
-  }
-  $('terminalForm').addEventListener('submit',(event)=>{
-    event.preventDefault();
-    const el=$('commandInput');const value=el.value;el.value='';void execute(value);
-    el.focus();
-  });
-  document.querySelectorAll('[data-command]').forEach(btn => btn.addEventListener('click',()=>{
-    void execute(btn.dataset.command);$('commandInput').focus();
-  }));
-  $('pushButton').addEventListener('click',()=>{
-    const value=$('stackValue').value.trim() || 'Idea';
-    $('stackValue').value='';void execute(`push "${value.replaceAll('"','')}"`);
-  });
-  $('stackValue').addEventListener('keydown', (event)=>{if(event.key==='Enter'){event.preventDefault();$('pushButton').click();}});
-  $('popButton').addEventListener('click',()=>{void execute('pop');});
-  $('pipelineButton').addEventListener('click',()=>{void execute('run');});
-  $('langToggle').addEventListener('click',()=>{setLanguage(lang==='fa'?'en':'fa');});
-  $('themeToggle').addEventListener('click',()=>{document.body.classList.toggle('light');});
-  document.querySelectorAll('.pipeline-step').forEach(btn => btn.addEventListener('click',()=>{if(!running)setStage(Number(btn.dataset.step));}));
-  $('year').textContent = String(new Date().getFullYear());
-  setLanguage('fa');renderStack();log('NOVINSTACK · BUILD CONSOLE v1.0','gold');log(tr('boot'),'muted');setStage(0);
+  function svg(id) { const s=document.createElementNS('http://www.w3.org/2000/svg','svg');const use=document.createElementNS('http://www.w3.org/2000/svg','use');use.setAttribute('href','#'+id);s.appendChild(use);return s; }
+  function updateSend() {sendButton.disabled = busy || !input.value.trim();input.style.height='auto';input.style.height=Math.min(input.scrollHeight,135)+'px';}
+  function renderPrompts(){const box=el('quick-prompts');box.replaceChildren();copy[lang].prompts.forEach(text=>{const b=document.createElement('button');b.type='button';b.className='prompt';const span=document.createElement('span');span.textContent=text;b.append(span,svg('i-arrow'));b.addEventListener('click',()=>ask(text));box.appendChild(b);});}
+  function setLanguage(next){lang=next;document.documentElement.lang=lang;document.documentElement.dir=lang==='fa'?'rtl':'ltr';document.title=lang==='fa'?'دستیار هوشمند نوین‌استک | NovinStack':'NovinStack AI Assistant | Ask NovinStack';const t=copy[lang];document.querySelectorAll('[data-i18n]').forEach(n=>{const key=n.dataset.i18n;if(t[key]!==undefined){if(key==='heroTitle') n.innerHTML=t[key];else n.textContent=t[key];}});input.placeholder=t.placeholder;input.setAttribute('aria-label',t.inputLabel);el('lang-label').textContent=lang==='fa'?'EN':'فا';el('lang-switch').setAttribute('aria-label',lang==='fa'?'Switch to English':'تغییر زبان به فارسی');el('reset-button').setAttribute('aria-label',t.reset);el('reset-button').title=t.reset;sendButton.setAttribute('aria-label',t.send);sendButton.title=t.send;el('mode-status').textContent=aiConfigured?t.aiMode:t.basicMode;el('notice-text').textContent=aiConfigured?t.noticeAI:t.noticeBasic;document.querySelector('[data-i18n="privacy"]').textContent=aiConfigured?t.privacyAI:t.privacy;renderPrompts();}
+  function scrollBottom(){chatArea.scrollTo({top:chatArea.scrollHeight,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});}
+  function addMessage(role,text,url){welcome.hidden=true;const item=document.createElement('article');item.className='message '+role;const content=document.createElement('div');content.className='message-content';if(role==='assistant'){const av=document.createElement('div');av.className='message-avatar';av.appendChild(svg('i-spark'));item.appendChild(av);}const label=document.createElement('span');label.className='message-label';label.textContent=role==='user'?copy[lang].you:copy[lang].assistant;const bubble=document.createElement('div');bubble.className='bubble';bubble.textContent=text;content.append(label,bubble);if(role==='assistant'){const actions=document.createElement('div');actions.className='message-actions';const button=document.createElement('button');button.className='copy-button';button.type='button';button.append(svg('i-copy'),document.createTextNode(copy[lang].copy));button.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(text);button.lastChild.textContent=copy[lang].copied;}catch{}});actions.appendChild(button);if(url){const link=document.createElement('a');link.className='copy-button';link.href=url;link.target='_blank';link.rel='noopener noreferrer';link.append(svg('i-external'),document.createTextNode(lang==='fa'?'اطلاعات بیشتر':'Learn more'));actions.appendChild(link);}content.appendChild(actions);}item.appendChild(content);messages.appendChild(item);scrollBottom();}
+  function showNotice(text){el('notice-text').textContent=text;}
+  async function ask(value){if(busy)return;const question=String(value||'').trim();if(!question)return;if(question.length>1200){showNotice(copy[lang].tooLong);return;}if(aiConfigured&&!captchaToken){input.value=question;updateSend();showNotice(copy[lang].noticeCaptcha);el('turnstile-wrap').scrollIntoView({block:'nearest'});return;}
+    input.value='';updateSend();const past=history.slice(-8);addMessage('user',question);history.push({role:'user',content:question});busy=true;typing.hidden=false;updateSend();scrollBottom();const current=++requestId;
+    try{let result;if(aiConfigured){const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),28000);try{const response=await fetch(apiBase+'/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:question,history:past,language:lang,turnstileToken:captchaToken}),signal:controller.signal});const data=await response.json().catch(()=>({}));if(!response.ok){const error=new Error(data.error||'API unavailable');error.code=data.code||'';throw error;}if(typeof data.answer!=='string'||!data.answer.trim())throw new Error('Empty answer');result={text:data.answer.trim()};}finally{clearTimeout(timeout);captchaToken='';if(widgetId!==null&&window.turnstile)window.turnstile.reset(widgetId);}}else{await new Promise(r=>setTimeout(r,260));result=basicAnswer(question);}
+      if(current!==requestId)return;addMessage('assistant',result.text,result.url);history.push({role:'assistant',content:result.text});showNotice(aiConfigured?copy[lang].noticeAI:copy[lang].noticeBasic);
+    }catch(e){if(current!==requestId)return;const errorText=e?.code==='DAILY_LIMIT'?copy[lang].quota:copy[lang].error;addMessage('assistant',errorText);showNotice(errorText);history=history.filter((_,i)=>i<history.length-1);}finally{if(current===requestId){busy=false;typing.hidden=true;updateSend();input.focus();}}}
+  function reset(){requestId++;busy=false;history=[];messages.replaceChildren();welcome.hidden=false;typing.hidden=true;input.value='';updateSend();showNotice(aiConfigured?copy[lang].noticeAI:copy[lang].noticeBasic);if(widgetId!==null&&window.turnstile){captchaToken='';window.turnstile.reset(widgetId);}chatArea.scrollTop=0;input.focus();}
+  function initTurnstile(){if(!aiConfigured)return;el('turnstile-wrap').hidden=false;const script=document.createElement('script');script.src='https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';script.async=true;script.defer=true;script.onload=()=>{if(!window.turnstile)return;widgetId=window.turnstile.render('#turnstile-widget',{sitekey:siteKey,callback:(token)=>{captchaToken=token;showNotice(copy[lang].noticeAI);},'expired-callback':()=>{captchaToken='';},'error-callback':()=>{captchaToken='';showNotice(copy[lang].noticeCaptcha);}});};script.onerror=()=>showNotice(copy[lang].noticeCaptcha);document.head.appendChild(script);}
+  form.addEventListener('submit',(e)=>{e.preventDefault();ask(input.value);});input.addEventListener('input',updateSend);input.addEventListener('keydown',(e)=>{if(e.key==='Enter'&&!e.shiftKey&&!e.isComposing){e.preventDefault();ask(input.value);}});el('lang-switch').addEventListener('click',()=>setLanguage(lang==='fa'?'en':'fa'));el('reset-button').addEventListener('click',reset);document.querySelectorAll('[data-topic]').forEach(button=>button.addEventListener('click',()=>ask(copy[lang].topics[button.dataset.topic])));
+  setLanguage('fa');updateSend();initTurnstile();
 })();
