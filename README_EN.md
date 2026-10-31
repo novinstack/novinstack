@@ -2,8 +2,6 @@
 
 <p align="center"><strong>NovinStack Technology Group</strong><br>From Knowledge to Product · از یادگیری تا ساخت محصول</p>
 
-<p align="center"><img src="./assets/novinstack-logo-transparent.png" width="90" alt="NovinStack official teal and gold emblem" /></p>
-
 <p align="center"><img src="./assets/hero.svg" width="100%" alt="NovinStack Technology Group — software engineering, applied AI, automation, and digital products" /></p>
 
 <p align="center">
@@ -14,6 +12,7 @@
   <a href="https://novinstack.com">Website</a> &nbsp;·&nbsp;
   <a href="https://github.com/novinstack?tab=repositories">Repositories</a> &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/company/novinstack/">LinkedIn</a> &nbsp;·&nbsp;
+  <a href="https://www.instagram.com/novinstack/">Instagram</a> &nbsp;·&nbsp;
   <a href="https://t.me/novinstack">Telegram</a> &nbsp;·&nbsp;
   <a href="https://www.youtube.com/@NovinStack">YouTube</a>
 </p>
@@ -30,15 +29,15 @@ We are known as **NovinStack** (also written **Novin Stack**) and in Persian as 
 
 **Our philosophy:** *Structured Prestige* — disciplined engineering, purposeful simplicity, and lasting quality.
 
-## Meet Tisa — Your NovinStack AI Assistant
+<h2 align="center">Meet Tisa — Your NovinStack AI Assistant</h2>
 
-**Tisa is NovinStack’s intelligent assistant and an expression of its ideas.**
+<p align="center"><strong>Tisa is NovinStack’s intelligent assistant, bringing the group’s ideas into action.</strong></p>
 
 Ask Tisa about our software engineering services, applied AI, automation, technologies, public projects, and ways to collaborate. Tisa supports Persian and English and can direct you to the NovinStack team when a question needs a project-specific answer.
 
-<a href="https://novinstack.github.io/novinstack/"><img src="./assets/tisa-banner-en.png" width="100%" alt="Meet Tisa, NovinStack’s intelligent assistant — explore services, technologies and collaboration" /></a>
+<p align="center"><a href="https://novinstack.github.io/novinstack/"><img src="./assets/tisa-banner-en.png" width="100%" alt="Meet Tisa, NovinStack’s intelligent assistant — explore services, technologies and collaboration" /></a></p>
 
-**[Start a conversation with Tisa →](https://novinstack.github.io/novinstack/)** · [Contact NovinStack](https://novinstack.com/contact)
+<p align="center"><strong><a href="https://novinstack.github.io/novinstack/">Start a conversation with Tisa →</a></strong> &nbsp;·&nbsp; <a href="https://novinstack.com/contact">Contact NovinStack</a></p>
 
 ## Our Engineering Mindset
 
@@ -46,16 +45,45 @@ Ask Tisa about our software engineering services, applied AI, automation, techno
 
 **Analyze before building · Architect for the problem · Write maintainable code · Test critical paths · Deploy reliably · Improve continuously**
 
+<h2 align="center">Artificial Intelligence at NovinStack</h2>
+
+<p align="center"><strong>Practical AI for better decisions, stronger engineering, and more useful products.</strong></p>
+
+At NovinStack, AI is more than a showcase feature. We explore its role at two complementary levels: **improving internal engineering workflows** and **building intelligent capabilities for digital products and business operations**.
+
+### AI in Our Engineering Workflow
+
+Our approach includes targeted use of AI assistants and agents for research, requirements analysis, documentation, development support, code review, test planning, knowledge workflows, and automation. Sensitive outcomes require **human oversight, access controls, and quality checks**. AI supports engineering judgment; it does not replace accountability.
+
+### Applied AI for Businesses
+
+Depending on the problem and available data, solutions may involve **AI agents, conversational assistants, retrieval-augmented generation (RAG), semantic search, document intelligence, recommendation systems, intelligent matching, and workflow automation**. We prioritize measurable value, security, operational cost, and maintainability.
+
+<h2 align="center">AI-Powered Industrial Products</h2>
+
+<p align="center"><strong>Connecting industrial expertise, structured data, and intelligent software.</strong></p>
+
+One of NovinStack’s strategic product directions is **AI-enabled industrial software and platforms**, including the concept of a specialized industrial marketplace connecting buyers, sellers, and suppliers.
+
+| Product direction | Potential capabilities |
+| :--- | :--- |
+| **Technical & semantic search** | Finding components and equipment by application, requirements, and technical specifications |
+| **Intelligent matching** | Matching procurement needs with suitable products and suppliers |
+| **Industrial document intelligence** | Extracting structured information from catalogs, datasheets, and quotation requests |
+| **Decision support** | Supporting product comparisons, pricing analysis, and supplier recommendations using reliable data |
+
+**Development status:** These are strategic directions and capabilities under consideration, **not announcements of launched or generally available industrial products**.
+
 ## What We Do
 
 | Area | Capabilities |
 | :--- | :--- |
 | **Software Engineering** | Custom software, websites and web applications, frontend and backend systems, APIs, service integrations |
 | **Enterprise Systems** | Admin panels, dashboards, access control, ordering and supplier management, reporting |
-| **Applied AI** | AI agents, semantic search, RAG, data processing, and practical AI integrations when they solve real problems |
+| **Applied AI** | AI agents, conversational assistants, RAG, semantic search, document intelligence, and data-driven features |
 | **Business Automation** | Workflows, n8n, bots, webhooks, connected services, and reducing repetitive manual processes |
 | **Mobile & Desktop** | Android and cross-platform applications, Windows software, backend-integrated clients |
-| **Digital Products** | Product discovery, prototypes and MVPs, maintainable architecture, iterative releases |
+| **Digital & Industrial Products** | Product discovery, prototypes and MVPs, industrial platforms and marketplaces, maintainable architecture, iterative releases |
 | **Education & Developer Tools** | Technical learning, documentation, developer utilities, and collaborative projects |
 
 ## Areas of the NovinStack Ecosystem

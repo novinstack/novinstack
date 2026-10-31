@@ -1,22 +1,21 @@
-<h1 dir="rtl" align="right">NovinStack | نوین‌استک</h1>
+<h1 dir="rtl" align="center">NovinStack | نوین‌استک</h1>
 
-<p dir="rtl" align="right"><strong>گروه نرم‌افزاری و فناوری نوین‌استک</strong><br>از یادگیری تا ساخت محصول · From Knowledge to Product</p>
-
-<p align="center"><img src="./assets/novinstack-logo-transparent.png" width="90" alt="NovinStack official teal and gold emblem" /></p>
+<p dir="rtl" align="center"><strong>گروه نرم‌افزاری و فناوری نوین‌استک</strong><br>از یادگیری تا ساخت محصول · From Knowledge to Product</p>
 
 <p align="center">
   <img src="./assets/hero.svg" width="100%" alt="NovinStack | نوین‌استک — مهندسی نرم‌افزار، هوش مصنوعی کاربردی، اتوماسیون و محصولات دیجیتال" />
 </p>
 
-<p dir="rtl" align="right">
+<p dir="rtl" align="center">
   <strong>🇮🇷 فارسی</strong> &nbsp;·&nbsp;
   <a href="./README_EN.md"><strong>🇬🇧 English</strong></a>
 </p>
 
-<p align="right" dir="rtl">
+<p align="center" dir="rtl">
   <a href="https://novinstack.com">وب‌سایت رسمی</a> &nbsp;·&nbsp;
   <a href="https://github.com/novinstack?tab=repositories">مخازن و پروژه‌ها</a> &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/company/novinstack/">لینکدین</a> &nbsp;·&nbsp;
+  <a href="https://www.instagram.com/novinstack/">اینستاگرام</a> &nbsp;·&nbsp;
   <a href="https://t.me/novinstack">تلگرام</a> &nbsp;·&nbsp;
   <a href="https://www.youtube.com/@NovinStack">یوتیوب</a>
 </p>
@@ -35,22 +34,54 @@
 
 <p><strong>فلسفه طراحی و توسعه:</strong> <em>Structured Prestige</em> — سادگی هدفمند، نظم مهندسی و کیفیت ماندگار.</p>
 
-<h2>با تیسا گفتگو کنید</h2>
+<h2 align="center">با تیسا گفتگو کنید</h2>
 
-<p><strong>تیسا، دستیار هوشمند و مجری اندیشه‌های نوین‌استک.</strong></p>
+<p align="center" dir="rtl"><strong>تیسا، دستیار هوشمند و مجری اندیشه‌های نوین‌استک.</strong></p>
 
 <p>برای آشنایی با خدمات مهندسی نرم‌افزار، هوش مصنوعی کاربردی، اتوماسیون، فناوری‌ها، محصولات عمومی و مسیر همکاری، سؤال خود را مستقیماً از تیسا بپرسید. تیسا به فارسی و انگلیسی پاسخ می‌دهد و برای موضوعات نیازمند بررسی تخصصی، شما را به مسیر ارتباط با تیم نوین‌استک راهنمایی می‌کند.</p>
 
 <p align="center"><a href="https://novinstack.github.io/novinstack/"><img src="./assets/tisa-banner-fa.png" width="100%" alt="تیسا، دستیار هوشمند و مجری اندیشه‌های نوین‌استک؛ برای گفتگو درباره خدمات و فناوری‌ها وارد شوید" /></a></p>
 
-<p><strong><a href="https://novinstack.github.io/novinstack/">← شروع گفتگو با تیسا</a></strong> &nbsp;·&nbsp; <a href="https://novinstack.com/contact">ارتباط مستقیم با تیم نوین‌استک</a></p>
+<p align="center" dir="rtl"><strong><a href="https://novinstack.github.io/novinstack/">← شروع گفتگو با تیسا</a></strong> &nbsp;·&nbsp; <a href="https://novinstack.com/contact">ارتباط مستقیم با تیم نوین‌استک</a></p>
 
 <h2>از ایده تا محصول؛ منطق مهندسی ما</h2>
 
-<p><img src="./assets/workflow.svg" width="100%" alt="فرایند مهندسی محصول نوین‌استک: یادگیری و تحلیل، معماری، توسعه، عرضه و بهبود مستمر" /></p>
+<p align="center"><img src="./assets/workflow.svg" width="100%" alt="فرایند مهندسی محصول نوین‌استک: یادگیری و تحلیل، معماری، توسعه، عرضه و بهبود مستمر" /></p>
 
 
-<p><strong>تحلیل پیش از توسعه · معماری متناسب با نیاز · کد قابل نگهداری · آزمون مسیرهای حیاتی · استقرار قابل اتکا · بهبود تدریجی</strong></p>
+<p align="center" dir="rtl"><strong>تحلیل پیش از توسعه · معماری متناسب با نیاز · کد قابل نگهداری · آزمون مسیرهای حیاتی · استقرار قابل اتکا · بهبود تدریجی</strong></p>
+
+<h2 align="center">هوش مصنوعی در نوین‌استک</h2>
+
+<p align="center" dir="rtl"><strong>هوش مصنوعی برای تصمیم‌گیری بهتر، اجرای دقیق‌تر و ساخت محصولات کاربردی‌تر.</strong></p>
+
+<p>در نوین‌استک، هوش مصنوعی صرفاً یک قابلیت نمایشی یا ابزار تولید محتوا نیست؛ بخشی از رویکرد مهندسی و توسعه محصول است. ما کاربرد آن را در دو سطح دنبال می‌کنیم: <strong>بهبود فرایندهای داخلی سازمان</strong> و <strong>توسعه قابلیت‌های هوشمند برای محصولات و کسب‌وکارها</strong>.</p>
+
+<h3>هوش مصنوعی در فرایندهای سازمانی</h3>
+
+<p>رویکرد ما استفاده هدفمند از دستیارها و عامل‌های هوشمند در تحقیق و تحلیل نیازمندی‌ها، مستندسازی، کمک به برنامه‌نویسی و بازبینی کد، طراحی سناریوهای آزمون، مدیریت دانش و خودکارسازی گردش‌کارهاست. خروجی‌های حساس با <strong>نظارت انسانی، کنترل دسترسی و ارزیابی کیفیت</strong> بررسی می‌شوند؛ AI جایگزین مسئولیت‌پذیری مهندسی نیست.</p>
+
+<h3>هوش مصنوعی در راهکارهای مشتریان</h3>
+
+<p>متناسب با مسئله و کیفیت داده‌ها، قابلیت‌هایی مانند <strong>AI Agents، دستیارهای گفتگو، RAG، جست‌وجوی معنایی، استخراج اطلاعات از اسناد، سیستم‌های پیشنهاددهنده، تطبیق هوشمند و اتوماسیون فرایندها</strong> قابل بررسی و طراحی هستند. انتخاب هر راهکار بر اساس ارزش واقعی، امنیت، هزینه اجرا و قابلیت نگهداری انجام می‌شود.</p>
+
+<h2 align="center">محصولات صنعتی مبتنی بر هوش مصنوعی</h2>
+
+<p align="center" dir="rtl"><strong>پیوند دانش صنعتی، داده و نرم‌افزار برای تصمیم‌گیری هوشمندتر.</strong></p>
+
+<p>یکی از محورهای راهبردی توسعه محصول در نوین‌استک، <strong>راهکارها و پلتفرم‌های دیجیتال صنعتی با قابلیت‌های هوش مصنوعی</strong> است؛ از جمله ایده توسعه یک بازارگاه تخصصی برای ارتباط خریداران، فروشندگان و تأمین‌کنندگان صنعتی.</p>
+
+<table dir="rtl" width="100%">
+  <thead><tr><th dir="rtl" align="right">محور محصول</th><th dir="rtl" align="right">قابلیت‌های قابل توسعه</th></tr></thead>
+  <tbody>
+    <tr><td dir="rtl" align="right"><strong>جست‌وجوی فنی و معنایی</strong></td><td dir="rtl" align="right">یافتن تجهیزات و قطعات بر اساس نیاز، کاربرد و مشخصات فنی، نه فقط تطابق واژه‌ها</td></tr>
+    <tr><td dir="rtl" align="right"><strong>تطبیق هوشمند</strong></td><td dir="rtl" align="right">کمک به تطبیق درخواست خریدار با کالاها و تأمین‌کنندگان مناسب</td></tr>
+    <tr><td dir="rtl" align="right"><strong>پردازش اسناد صنعتی</strong></td><td dir="rtl" align="right">استخراج و ساختاربندی اطلاعات از کاتالوگ‌ها، دیتاشیت‌ها و درخواست‌های استعلام</td></tr>
+    <tr><td dir="rtl" align="right"><strong>تحلیل و پیشنهاد</strong></td><td dir="rtl" align="right">مقایسه گزینه‌ها و کمک به تحلیل قیمت، پیشنهاد محصول و انتخاب تأمین‌کننده بر اساس داده معتبر</td></tr>
+  </tbody>
+</table>
+
+<p><strong>وضعیت توسعه:</strong> این موارد جهت‌گیری محصولی و قابلیت‌های قابل بررسی در نقشه راه نوین‌استک هستند؛ معرفی آن‌ها به معنای انتشار یا آماده‌بودن یک محصول صنعتی مشخص نیست.</p>
 
 <h2>حوزه‌های تخصصی</h2>
 
@@ -72,7 +103,7 @@
     </tr>
     <tr>
       <td dir="rtl" align="right"><strong>هوش مصنوعی کاربردی</strong></td>
-      <td dir="rtl" align="right">عامل‌های هوشمند (AI Agents)، جست‌وجوی معنایی، RAG، پردازش اطلاعات و افزودن قابلیت‌های هوشمند متناسب با مسئله</td>
+      <td dir="rtl" align="right">عامل‌های هوشمند (AI Agents)، دستیارهای گفتگو، RAG، جست‌وجوی معنایی، پردازش اسناد و تحلیل داده</td>
     </tr>
     <tr>
       <td dir="rtl" align="right"><strong>اتوماسیون</strong></td>
@@ -83,8 +114,8 @@
       <td dir="rtl" align="right">اپلیکیشن‌های Android و چندسکویی، نرم‌افزارهای Windows و اتصال آن‌ها به زیرساخت Backend</td>
     </tr>
     <tr>
-      <td dir="rtl" align="right"><strong>توسعه محصول</strong></td>
-      <td dir="rtl" align="right">تحلیل محصول، نمونه اولیه و MVP، طراحی معماری قابل توسعه، عرضه تدریجی و بهبود محصول</td>
+      <td dir="rtl" align="right"><strong>توسعه محصولات دیجیتال و صنعتی</strong></td>
+      <td dir="rtl" align="right">تحلیل محصول، نمونه اولیه و MVP، پلتفرم‌های صنعتی و بازارگاه‌های تخصصی، معماری قابل توسعه و عرضه تدریجی</td>
     </tr>
     <tr>
       <td dir="rtl" align="right"><strong>آموزش و ابزار توسعه‌دهندگان</strong></td>
@@ -149,4 +180,4 @@
 
 <p align="center"><img src="./assets/footer.svg" width="100%" alt="NovinStack — From Knowledge to Product | از یادگیری تا ساخت محصول" /></p>
 
-<p align="right" dir="rtl"><strong>از یادگیری تا ساخت محصول</strong><br><sub>NovinStack · Software Engineering · Applied AI · Automation · Digital Products</sub></p>
+<p align="center" dir="rtl"><strong>از یادگیری تا ساخت محصول</strong><br><sub>NovinStack · Software Engineering · Applied AI · Automation · Digital Products</sub></p>
