@@ -29,9 +29,9 @@ We are known as **NovinStack** (also written **Novin Stack**) and in Persian as 
 
 **Our philosophy:** *Structured Prestige* — disciplined engineering, purposeful simplicity, and lasting quality.
 
-<h2 align="center">Meet Tisa — Your NovinStack AI Assistant</h2>
+<h2 dir="ltr" align="left">Meet Tisa — Your NovinStack AI Assistant</h2>
 
-<p align="center"><strong>Tisa is NovinStack’s intelligent assistant, bringing the group’s ideas into action.</strong></p>
+<p dir="ltr" align="left"><strong>Tisa is NovinStack’s intelligent assistant, bringing the group’s ideas into action.</strong></p>
 
 Ask Tisa about our software engineering services, applied AI, automation, technologies, public projects, and ways to collaborate. Tisa supports Persian and English and can direct you to the NovinStack team when a question needs a project-specific answer.
 
@@ -45,9 +45,9 @@ Ask Tisa about our software engineering services, applied AI, automation, techno
 
 **Analyze before building · Architect for the problem · Write maintainable code · Test critical paths · Deploy reliably · Improve continuously**
 
-<h2 align="center">Artificial Intelligence at NovinStack</h2>
+<h2 dir="ltr" align="left">Artificial Intelligence at NovinStack</h2>
 
-<p align="center"><strong>Practical AI for better decisions, stronger engineering, and more useful products.</strong></p>
+<p dir="ltr" align="left"><strong>Practical AI for better decisions, stronger engineering, and more useful products.</strong></p>
 
 At NovinStack, AI is more than a showcase feature. We explore its role at two complementary levels: **improving internal engineering workflows** and **building intelligent capabilities for digital products and business operations**.
 
@@ -59,9 +59,9 @@ Our approach includes targeted use of AI assistants and agents for research, req
 
 Depending on the problem and available data, solutions may involve **AI agents, conversational assistants, retrieval-augmented generation (RAG), semantic search, document intelligence, recommendation systems, intelligent matching, and workflow automation**. We prioritize measurable value, security, operational cost, and maintainability.
 
-<h2 align="center">AI-Powered Industrial Products</h2>
+<h2 dir="ltr" align="left">AI-Powered Industrial Products</h2>
 
-<p align="center"><strong>Connecting industrial expertise, structured data, and intelligent software.</strong></p>
+<p dir="ltr" align="left"><strong>Connecting industrial expertise, structured data, and intelligent software.</strong></p>
 
 One of NovinStack’s strategic product directions is **AI-enabled industrial software and platforms**, including the concept of a specialized industrial marketplace connecting buyers, sellers, and suppliers.
 
